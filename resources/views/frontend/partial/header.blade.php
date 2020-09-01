@@ -2,27 +2,18 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12 display-flex v-center">
-                <div class="header_left_logo"> <a href="index.html" class="logo">
+                <div class="header_left_logo"> <a href="{{ route('homepage') }}" class="logo">
                         <img src="{{ asset('/') }}frontend/images/4.jpg" alt="">
                     </a> </div>
                 <div class="header_mainmenu text-center">
                     <!-- main nav start -->
                     <nav class="mainmenu_wrapper">
                         <ul class="mainmenu nav sf-menu">
-                            <li class="active"> <a href="index.html">Home</a>
-
-                            </li>
-                            <li> <a href="management.html">Management </a>
-
-                            </li>
-                            <li> <a href="cirtification.html"> Certification</a>
-
-                            </li>
-
-                            <li> <a href="product.html"> Product Gallary</a>
-
-                            </li>
-                            <li> <a href="contact-me.html">Contact</a>
+                            <li class="active"><a href="{{ route('homepage') }}">Home</a></li>
+                            <li><a href="{{ route('management') }}">Management </a></li>
+                            <li><a href="{{ route('certification') }}"> Certification</a></li>
+                            <li><a href="{{ route('gallery') }}"> Product Gallary</a></li>
+                            <li><a href="{{ route('contact') }}">Contact</a>
 
                             </li>
                         </ul>

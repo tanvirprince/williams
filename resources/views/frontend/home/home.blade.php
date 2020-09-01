@@ -3,7 +3,6 @@
     Williams | Home
 @endsection
 
-
 @section('content')
     <section class="intro_section page_mainslider cs all-scr-cover">
         <div class="flexslider" data-dots="false" data-nav="true">
@@ -231,11 +230,4 @@
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
 @endsection

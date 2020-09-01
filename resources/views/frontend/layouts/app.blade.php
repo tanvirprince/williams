@@ -2,7 +2,7 @@
 <html class="no-js">
 
 <head>
-    <title>Williams Sweaters Limited </title>
+    <title> @yield('title') </title>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,19 +27,11 @@
 <div id="canvas">
     <div id="box_wrapper">
         <!-- template sections -->
-
         @include('frontend.partial.header')
-
 
         @yield('content')
 
         @include('frontend.partial.footer')
-
-
-
-
-
-
     </div>
 <!-- eof #box_wrapper -->
 </div>

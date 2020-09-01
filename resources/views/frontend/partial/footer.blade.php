@@ -68,7 +68,7 @@
 <section class="page_copyright ds background_cover section_padding_top_10 section_padding_bottom_10">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 text-center"> Developed by MicroKodes &copy; Copyright 2020 All Rights Reserved </div>
+            <div class="col-xs-12 text-center"> Developed by <a target="_blank" href="https://microkodes.com/" style="color: #000000;">MicroKodes </a> &copy; Copyright 2020 All Rights Reserved </div>
         </div>
     </div>
 </section>
