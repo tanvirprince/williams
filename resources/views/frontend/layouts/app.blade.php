@@ -28,12 +28,12 @@
     <div id="box_wrapper">
         <!-- template sections -->
 
-        @include('layouts.frontend.partial.header')
+        @include('frontend.partial.header')
 
 
         @yield('content')
 
-        @include('layouts.frontend.partial.footer')
+        @include('frontend.partial.footer')
 
 
 

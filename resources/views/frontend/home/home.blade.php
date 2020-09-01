@@ -1,13 +1,10 @@
-@extends('layouts.app')
+@extends('frontend.layouts.app')
 @section('title')
     Williams | Home
 @endsection
 
 
 @section('content')
-
-
-
     <section class="intro_section page_mainslider cs all-scr-cover">
         <div class="flexslider" data-dots="false" data-nav="true">
             <ul class="slides">
@@ -78,14 +75,9 @@
 
             </div>
         </div>
-
-
     </section>
 
-
     <h3 class="text-center section_header topmargin_0">Service Process</h3>
-
-
     <section class="ls section_padding_top_150 section_padding_bottom_150">
         <div class="container">
             <div class="row">
