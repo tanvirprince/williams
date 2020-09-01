@@ -26,8 +26,8 @@
 <div id="wrapper">
 
     <!-- Sidebar -->
-    @include('layouts.backend.partial.sidebar')
-    <!-- End of Sidebar -->
+@include('layouts.backend.partial.sidebar')
+<!-- End of Sidebar -->
 
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
@@ -36,12 +36,12 @@
         <div id="content">
 
             <!-- Topbar -->
-            @include('layouts.backend.partial.topbar')
-            <!-- End of Topbar -->
+        @include('layouts.backend.partial.topbar')
+        <!-- End of Topbar -->
 
             <!-- Begin Page Content -->
         @yield('content')
-            <!-- /.container-fluid -->
+        <!-- /.container-fluid -->
 
         </div>
         <!-- End of Main Content -->
@@ -80,7 +80,7 @@
             <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-{{--                <a class="btn btn-primary" href="login.html">Logout</a>--}}
+                {{--                <a class="btn btn-primary" href="login.html">Logout</a>--}}
 
                 <a class="btn btn-primary" href="{{ route('logout') }}"
                    onclick="event.preventDefault();
