@@ -26,7 +26,7 @@
 <div id="wrapper">
 
     <!-- Sidebar -->
-@include('layouts.backend.partial.sidebar')
+@include('backend.partial.sidebar')
 <!-- End of Sidebar -->
 
     <!-- Content Wrapper -->
@@ -36,7 +36,7 @@
         <div id="content">
 
             <!-- Topbar -->
-        @include('layouts.backend.partial.topbar')
+        @include('backend.partial.topbar')
         <!-- End of Topbar -->
 
             <!-- Begin Page Content -->
