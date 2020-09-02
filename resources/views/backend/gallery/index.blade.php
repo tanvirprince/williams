@@ -24,6 +24,11 @@
     <div class="card-header py-3">
       <h6 class="m-0 font-weight-bold text-primary">Gallery List</h6>
     </div>
+    @if (session('success'))
+    <div class="alert alert-success" role="alert">
+        {{ session('success') }}
+    </div>
+    @endif
     <div class="card-body">
       <div class="table-responsive">
         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -58,7 +63,10 @@
               <td><img src="{{ asset('/storage/'.$gallery->image) }}" alt="" width="100px" height="50px"></td>
               <td>{{ Carbon\Carbon::parse($gallery->date)->format('d F, Y') }}</td>
               <td>{!! implode(' ', array_slice(explode(' ', $gallery->editor1), 0, 10)) !!}</td>
-              <td>Action</td>
+              <td>
+                <a href="{{ route('galleries.edit', $gallery->id) }}" class="btn btn-sm btn-primary"> Edit </a>
+                <a href="{{ route('galleries.delete', $gallery->id) }}" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure to delete?')"> Delete </a>
+              </td>
             </tr>
             @endforeach
           </tbody>

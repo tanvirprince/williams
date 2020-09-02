@@ -74,7 +74,9 @@ class GalleryController extends Controller
      */
     public function edit($id)
     {
-        //
+        $gallery = Gallery::find($id);
+        // return $gallery->date;
+        return view('backend.gallery.edit', compact('gallery'));
     }
 
     /**
@@ -86,7 +88,29 @@ class GalleryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $file = '';
+        $gallery = Gallery::find($id);
+        if ($request->hasFile('image')) {
+            if ($request->hasFile('image')) {
+                Storage::disk('public')->delete('gallery', $gallery->image);
+                $file = Storage::disk('public')->put('gallery', $request->file('image'));
+            }
+            $gallery->title = $request->title;
+            $gallery->image = $file;
+            $gallery->category = $request->category;
+            $gallery->editor1 = $request->editor1;
+            $gallery->date = $request->date;
+            $gallery->save();
+        } else {
+            $gallery->title = $request->title;
+            $gallery->category = $request->category;
+            $gallery->editor1 = $request->editor1;
+            $gallery->date = $request->date;
+            $gallery->save();
+        } 
+        return redirect(route('galleries.index'))
+                ->with('success', 'Gallery Updated successfully');
+
     }
 
     /**
@@ -95,8 +119,14 @@ class GalleryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function delete($id)
     {
-        //
+        $gallery = Gallery::find($id);
+            Storage::disk('public')->delete('gallery', $gallery->image);
+            $gallery->delete();
+
+            return redirect(route('galleries.index'))
+                ->with('success', 'Gallery Deleted successfully');
+
     }
 }
