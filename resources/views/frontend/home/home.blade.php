@@ -3,7 +3,6 @@
     Williams | Home
 @endsection
 
-
 @section('content')
     <section class="intro_section page_mainslider cs all-scr-cover">
         <div class="flexslider" data-dots="false" data-nav="true">
@@ -90,22 +89,66 @@
                                 </div>
                                 <div class="item-content">
                                     <h6 class="entry-title"> <a href="service-single.html">Iron section</a> </h6>
-                                    <div class="entry-content">
-                                        <!-- 												<p>Audiam apeirian sit at, mea an tibique insolens</p>
-                                         -->											</div>
                                 </div>
                             </article>
                         </div>
                         <div class="isotope-item col-xs-12 col-sm-4">
                             <article class="vertical-item service-item content-padding big-padding with_shadow text-center">
                                 <div class="item-media-wrap">
+                                    <div class="item-media"> <img src="{{ asset('/') }}frontend/images/services/10.png" alt=""> <a href="service-single.html" class="abs-link"></a> </div>
+                                </div>
+                                <div class="item-content">
+                                    <h6 class="entry-title"> <a href="service-single.html">Iron section</a> </h6>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="isotope-item col-xs-12 col-sm-4">
+                            <article class="vertical-item service-item content-padding big-padding with_shadow text-center">
+                                <div class="item-media-wrap">
+                                    <div class="item-media"> <img src="{{ asset('/') }}frontend/images/services/10.png" alt=""> <a href="service-single.html" class="abs-link"></a> </div>
+                                </div>
+                                <div class="item-content">
+                                    <h6 class="entry-title"> <a href="service-single.html">Iron section</a> </h6>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="isotope-item col-xs-12 col-sm-4">
+                            <article class="vertical-item service-item content-padding big-padding with_shadow text-center">
+                                <div class="item-media-wrap">
+                                    <div class="item-media"> <img src="{{ asset('/') }}frontend/images/services/10.png" alt=""> <a href="service-single.html" class="abs-link"></a> </div>
+                                </div>
+                                <div class="item-content">
+                                    <h6 class="entry-title"> <a href="service-single.html">Iron section</a> </h6>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="isotope-item col-xs-12 col-sm-4">
+                            <article class="vertical-item service-item content-padding big-padding with_shadow text-center">
+                                <div class="item-media-wrap">
+                                    <div class="item-media"> <img src="{{ asset('/') }}frontend/images/services/10.png" alt=""> <a href="service-single.html" class="abs-link"></a> </div>
+                                </div>
+                                <div class="item-content">
+                                    <h6 class="entry-title"> <a href="service-single.html">Iron section</a> </h6>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="isotope-item col-xs-12 col-sm-4">
+                            <article class="vertical-item service-item content-padding big-padding with_shadow text-center">
+                                <div class="item-media-wrap">
+                                    <div class="item-media"> <img src="{{ asset('/') }}frontend/images/services/10.png" alt=""> <a href="service-single.html" class="abs-link"></a> </div>
+                                </div>
+                                <div class="item-content">
+                                    <h6 class="entry-title"> <a href="service-single.html">Iron section</a> </h6>
+                                </div>
+                            </article>
+                        </div>
+                        {{-- <div class="isotope-item col-xs-12 col-sm-4">
+                            <article class="vertical-item service-item content-padding big-padding with_shadow text-center">
+                                <div class="item-media-wrap">
                                     <div class="item-media"> <img src="{{ asset('/') }}frontend/images/services/11.png" alt=""> <a href="service-single.html" class="abs-link"></a> </div>
                                 </div>
                                 <div class="item-content">
                                     <h6 class="entry-title"> <a href="service-single.html">Jacquard Section</a> </h6>
-                                    <div class="entry-content">
-                                        <!-- <p>Vim iriure omittantur ullamcorper ea</p> -->
-                                    </div>
                                 </div>
                             </article>
                         </div>
@@ -116,9 +159,6 @@
                                 </div>
                                 <div class="item-content">
                                     <h6 class="entry-title"> <a href="service-single.html">Jacquard</a> </h6>
-                                    <div class="entry-content">
-                                        <!-- <p>Eos timeam copiosae ne, duo eu saepe </p> -->
-                                    </div>
                                 </div>
                             </article>
                         </div>
@@ -129,9 +169,6 @@
                                 </div>
                                 <div class="item-content">
                                     <h6 class="entry-title"> <a href="service-single.html">Linking Section</a> </h6>
-                                    <div class="entry-content">
-                                        <!-- <p>Fugit legere propriae ex qui, ut eos </p> -->
-                                    </div>
                                 </div>
                             </article>
                         </div>
@@ -156,7 +193,7 @@
 
                                 </div>
                             </article>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -231,11 +268,4 @@
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
 @endsection

@@ -20,7 +20,11 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::group(['namespace'=>'Frontend'], function () {
-    Route::get('/', 'HomeController@index')->name('home'); 
+    Route::get('/', 'HomeController@index')->name('homepage');
+    Route::get('management', 'HomeController@management')->name('management');
+    Route::get('certification', 'HomeController@certification')->name('certification');
+    Route::get('gallery', 'HomeController@gallery')->name('gallery');
+    Route::get('contact', 'HomeController@contact')->name('contact');
 });
 
 
