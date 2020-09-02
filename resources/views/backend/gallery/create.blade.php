@@ -44,7 +44,7 @@
         </div>
         <div class="form-group">
             <label for="editor1">Description</label>
-            <textarea name="editor1">{{ old('editor1') }}"</textarea>
+            <textarea name="editor1">{{ old('editor1') }}</textarea>
             <span class="text-danger">{{ $errors->has('editor1') ? $errors->first('editor1') : '' }}</span>
         </div>
 
