@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers\Backend;
 
-use App\Http\Controllers\Controller;
+use App\Gallery;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Http\Requests\GalleryRequest;
+use Illuminate\Support\Facades\Storage;
 
 class GalleryController extends Controller
 {
@@ -14,7 +17,8 @@ class GalleryController extends Controller
      */
     public function index()
     {
-        //
+        $galleries = Gallery::latest()->get();
+        return view('backend.gallery.index', compact('galleries'));
     }
 
     /**
@@ -33,9 +37,22 @@ class GalleryController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(GalleryRequest $request)
     {
-        //
+        $file = '';
+        if ($request->hasFile('image')){
+            $file = Storage::disk('public')->put('gallery', $request->file('image'));
+        }
+        $gallery = new Gallery();
+        $gallery->title = $request->title;
+        $gallery->image = $file;
+        $gallery->category = $request->category;
+        $gallery->editor1 = $request->editor1;
+        $gallery->date = $request->date;
+        $gallery->save();
+
+        return redirect(route('galleries.index'))
+                ->with('success', 'Gallery Added successfully');
     }
 
     /**
