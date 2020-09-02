@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Service;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -14,7 +15,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('frontend.home.home');
+        $Services = Service::get();
+        return view('frontend.home.home', compact('services'));
 
     }
 
@@ -22,12 +24,12 @@ class HomeController extends Controller
     {
         return view('frontend.management');
     }
-    
+
     public function certification()
     {
         return view('frontend.certification');
     }
-    
+
     public function gallery()
     {
         return view('frontend.gallery');
@@ -37,6 +39,6 @@ class HomeController extends Controller
     {
         return view('frontend.contact');
     }
-    
+
 
 }

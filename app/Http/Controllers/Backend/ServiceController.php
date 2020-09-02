@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Backend;
 use App\Service;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\ServiceRequest;
+use Illuminate\Support\Facades\Storage;
 
 class ServiceController extends Controller
 {
@@ -36,9 +38,22 @@ class ServiceController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ServiceRequest $request)
     {
-        //
+        $file = '';
+        if ($request->hasFile('image')){
+            $file = Storage::disk('public')->put('service', $request->file('image'));
+        }
+        $services = new Service();
+        $services->name = $request->name;
+        $services->image = $file;
+
+        $services->save();
+
+        return redirect(route('service.index'))
+                ->with('success', 'Service has been Added successfully');
+
+
     }
 
     /**
@@ -81,8 +96,13 @@ class ServiceController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function delete($id)
     {
-        //
+        $service = Service::find($id);
+            Storage::disk('public')->delete('service', $service->image);
+            $service->delete();
+
+            return redirect(route('service.index'))
+                ->with('success', 'service Deleted successfully');
     }
 }

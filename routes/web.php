@@ -35,5 +35,6 @@ Route::group(['middleware'=>'auth', 'namespace' => 'Backend'], function () {
     Route::resource('service', 'ServiceController');
     Route::resource('galleries', 'GalleryController');
     Route::get('galleries/delete/{id}', 'GalleryController@delete')->name('galleries.delete');
+    Route::get('service/delete/{id}', 'ServiceController@delete')->name('service.delete');
 });
 
