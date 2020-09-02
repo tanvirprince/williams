@@ -33,6 +33,6 @@ Auth::routes();
 Route::group(['middleware'=>'auth', 'namespace' => 'Backend'], function () {
     Route::get('/home', 'HomeController@index')->name('home');
     Route::resource('service', 'ServiceController');
-    Route::resource('gallery', 'GalleryController');
+    Route::resource('galleries', 'GalleryController');
 });
 
