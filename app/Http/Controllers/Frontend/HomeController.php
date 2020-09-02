@@ -1,10 +1,11 @@
 <?php
 
 namespace App\Http\Controllers\Frontend;
-
-use App\Http\Controllers\Controller;
+use App\Gallery;
 use App\Service;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+
 
 class HomeController extends Controller
 {
@@ -15,7 +16,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $Services = Service::get();
+        $services = Service::get();
         return view('frontend.home.home', compact('services'));
 
     }
@@ -32,7 +33,14 @@ class HomeController extends Controller
 
     public function gallery()
     {
-        return view('frontend.gallery');
+        $galleries = Gallery::latest()->paginate(12);
+        return view('frontend.gallery', compact('galleries'));
+    }
+
+    public function singleGallery($id)
+    {
+        $gallery = Gallery::find($id);
+        return view('frontend.single-gallery', compact('gallery'));
     }
 
     public function contact()
