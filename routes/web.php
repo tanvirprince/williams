@@ -24,7 +24,7 @@ Route::group(['namespace'=>'Frontend'], function () {
     Route::get('management', 'HomeController@management')->name('management');
     Route::get('certification', 'HomeController@certification')->name('certification');
     Route::get('gallery', 'HomeController@gallery')->name('gallery');
-    Route::get('gallery/{id}', 'HomeController@singleGallery')->name('single-gallery');
+    Route::get('gallery/{slug}', 'HomeController@singleGallery')->name('single-gallery');
     Route::get('contact', 'HomeController@contact')->name('contact');
     Route::post('mail', 'SendMailController@mail')->name('mail');
 
