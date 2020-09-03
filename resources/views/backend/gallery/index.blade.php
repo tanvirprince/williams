@@ -22,7 +22,7 @@
    <!-- DataTales Example -->
    <div class="card shadow mb-4">
     <div class="card-header py-3">
-      <h6 class="m-0 font-weight-bold text-primary">Gallery List</h6>
+      <h6 class="m-0 font-weight-bold text-primary"><span>Gallery List</span> <span style="float: right;"><a class="btn btn-success" href="{{ route('galleries.create') }}">Create new Gallery</a></span></h6>
     </div>
     @if (session('success'))
     <div class="alert alert-success" role="alert">

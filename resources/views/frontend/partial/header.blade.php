@@ -9,11 +9,11 @@
                     <!-- main nav start -->
                     <nav class="mainmenu_wrapper">
                         <ul class="mainmenu nav sf-menu">
-                            <li class="active"><a href="{{ route('homepage') }}">Home</a></li>
-                            <li><a href="{{ route('management') }}">Management </a></li>
-                            <li><a href="{{ route('certification') }}"> Certification</a></li>
-                            <li><a href="{{ route('gallery') }}"> Product Gallary</a></li>
-                            <li><a href="{{ route('contact') }}">Contact</a>
+                            <li class="{{ request()->is('/') ? 'active' : ''}}"><a href="{{ route('homepage') }}">Home</a></li>
+                            <li class="{{ request()->is('management') ? 'active' : ''}}"><a href="{{ route('management') }}">Management </a></li>
+                            <li class="{{ request()->is('certification') ? 'active' : ''}}"><a href="{{ route('certification') }}"> Certification</a></li>
+                            <li class="{{ request()->is('gallery') ? 'active' : ''}}"><a href="{{ route('gallery') }}"> Product Gallary</a></li>
+                            <li class="{{ request()->is('contact') ? 'active' : ''}}"><a href="{{ route('contact') }}">Contact</a>
 
                             </li>
                         </ul>
@@ -23,8 +23,6 @@
                 </div>
                 <div class="header_right_buttons text-right">
                     <ul class="inline-dropdown inline-block">
-
-
                         </li>
                         <li class="dropdown social-dropdown"> <a id="social" data-target="#" href="index.html" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false" class="theme_button small_button round_button bg_button margin_0">
                                 <i class="qtyler-share" aria-hidden="true"></i>

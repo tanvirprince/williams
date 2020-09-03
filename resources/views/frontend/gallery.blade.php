@@ -27,10 +27,17 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <div class="filters isotope_filters"> <a href="#" class="selected" data-filter="*">All</a> <a href="#" data-filter=".category-1">Category 1</a> <a href="#" data-filter=".category-2">Category 2</a> <a href="#" data-filter=".category-3">Category 3</a> <a href="#" data-filter=".category-4">Category 4</a>								</div>
+                <div class="filters isotope_filters"> 
+                    <a href="#" class="selected" data-filter="*">All</a>
+                    <a href="#" data-filter=".Mens">Mens</a> 
+                    <a href="#" data-filter=".Ladies">Ladies</a> 
+                    <a href="#" data-filter=".Boys">Boys</a> 
+                    <a href="#" data-filter=".Girls">Girls</a>
+                    <a href="#" data-filter=".Kids">Kids</a>
+                </div>
                 <div class="isotope_container isotope row masonry-layout columns_margin_bottom_20" data-filters=".isotope_filters">
                     @foreach ($galleries as $gallery)
-                    <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
+                    <div class="isotope-item col-lg-4 col-md-6 col-sm-12 {{ $gallery->category }}">
                         <div class="vertical-item gallery-item content-absolute text-center ds">
                             <div class="item-media"> <img src="{{ asset('/storage/'.$gallery->image) }}" width="370px" height="370px" alt="">
                                 <div class="media-links">
@@ -43,153 +50,13 @@
                         </div>
                     </div>
                     @endforeach
-
-                    {{-- <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-2">
-                        <div class="vertical-item gallery-item content-absolute text-center ds">
-                            <div class="item-media"> <img src="{{ asset('/') }}frontend/images/gallery/02.jpg" alt="">
-                                <div class="media-links">
-                                    <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="{{ asset('/') }}frontend/images/gallery/02.jpg"></a> </div>
-                                </div>
-                            </div>
-                            <div class="item-content">
-                                <h4> <a href="gallary-view.html">Consetetur sadipscing elitr, sed diam nonumy</a> </h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-3">
-                        <div class="vertical-item gallery-item content-absolute text-center ds">
-                            <div class="item-media"> <img src="{{ asset('/') }}frontend/images/gallery/03.jpg" alt="">
-                                <div class="media-links">
-                                    <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="{{ asset('/') }}frontend/images/gallery/03.jpg"></a> </div>
-                                </div>
-                            </div>
-                            <div class="item-content">
-                                <h4> <a href="gallary-view.html">Consetetur sadipscing elitr, sed diam nonumy</a> </h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-4">
-                        <div class="vertical-item gallery-item content-absolute text-center ds">
-                            <div class="item-media"> <img src="{{ asset('/') }}frontend/images/gallery/04.jpg" alt="">
-                                <div class="media-links">
-                                    <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="{{ asset('/') }}frontend/images/gallery/04.jpg"></a> </div>
-                                </div>
-                            </div>
-                            <div class="item-content">
-                                <h4> <a href="gallary-view.html">Consetetur sadipscing elitr, sed diam nonumy</a> </h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
-                        <div class="vertical-item gallery-item content-absolute text-center ds">
-                            <div class="item-media"> <img src="{{ asset('/') }}frontend/images/gallery/05.jpg" alt="">
-                                <div class="media-links">
-                                    <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="{{ asset('/') }}frontend/images/gallery/05.jpg"></a> </div>
-                                </div>
-                            </div>
-                            <div class="item-content">
-                                <h4> <a href="gallary-view.html">Consetetur sadipscing elitr, sed diam nonumy</a> </h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-2">
-                        <div class="vertical-item gallery-item content-absolute text-center ds">
-                            <div class="item-media"> <img src="{{ asset('/') }}frontend/images/gallery/06.jpg" alt="">
-                                <div class="media-links">
-                                    <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="{{ asset('/') }}frontend/images/gallery/06.jpg"></a> </div>
-                                </div>
-                            </div>
-                            <div class="item-content">
-                                <h4> <a href="gallary-view.html">Consetetur sadipscing elitr, sed diam nonumy</a> </h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-3">
-                        <div class="vertical-item gallery-item content-absolute text-center ds">
-                            <div class="item-media"> <img src="{{ asset('/') }}frontend/images/gallery/07.jpg" alt="">
-                                <div class="media-links">
-                                    <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="{{ asset('/') }}frontend/images/gallery/07.jpg"></a> </div>
-                                </div>
-                            </div>
-                            <div class="item-content">
-                                <h4> <a href="gallary-view.html">Consetetur sadipscing elitr, sed diam nonumy</a> </h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-4">
-                        <div class="vertical-item gallery-item content-absolute text-center ds">
-                            <div class="item-media"> <img src="{{ asset('/') }}frontend/images/gallery/08.jpg" alt="">
-                                <div class="media-links">
-                                    <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="{{ asset('/') }}frontend/images/gallery/08.jpg"></a> </div>
-                                </div>
-                            </div>
-                            <div class="item-content">
-                                <h4> <a href="gallary-view.html">Consetetur sadipscing elitr, sed diam nonumy</a> </h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-1">
-                        <div class="vertical-item gallery-item content-absolute text-center ds">
-                            <div class="item-media"> <img src="{{ asset('/') }}frontend/images/gallery/09.jpg" alt="">
-                                <div class="media-links">
-                                    <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="{{ asset('/') }}frontend/images/gallery/09.jpg"></a> </div>
-                                </div>
-                            </div>
-                            <div class="item-content">
-                                <h4> <a href="gallary-view.html">Consetetur sadipscing elitr, sed diam nonumy</a> </h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-2">
-                        <div class="vertical-item gallery-item content-absolute text-center ds">
-                            <div class="item-media"> <img src="{{ asset('/') }}frontend/images/gallery/10.jpg" alt="">
-                                <div class="media-links">
-                                    <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="{{ asset('/') }}frontend/images/gallery/10.jpg"></a> </div>
-                                </div>
-                            </div>
-                            <div class="item-content">
-                                <h4> <a href="gallary-view.html">Consetetur sadipscing elitr, sed diam nonumy</a> </h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-3">
-                        <div class="vertical-item gallery-item content-absolute text-center ds">
-                            <div class="item-media"> <img src="{{ asset('/') }}frontend/images/gallery/11.jpg" alt="">
-                                <div class="media-links">
-                                    <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="{{ asset('/') }}frontend/images/gallery/11.jpg"></a> </div>
-                                </div>
-                            </div>
-                            <div class="item-content">
-                                <h4> <a href="gallary-view.html">Consetetur sadipscing elitr, sed diam nonumy</a> </h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="isotope-item col-lg-4 col-md-6 col-sm-12 category-4">
-                        <div class="vertical-item gallery-item content-absolute text-center ds">
-                            <div class="item-media"> <img src="{{ asset('/') }}frontend/images/gallery/12.jpg" alt="">
-                                <div class="media-links">
-                                    <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="{{ asset('/') }}frontend/images/gallery/12.jpg"></a> </div>
-                                </div>
-                            </div>
-                            <div class="item-content">
-                                <h4> <a href="gallary-view.html">Consetetur sadipscing elitr, sed diam nonumy</a> </h4>
-                            </div>
-                        </div>
-                    </div> --}}
                 </div>
-                <!-- eof .isotope_container.row -->
                 <div class="topmargin_40 text-center">
-                    <ul class="pagination">
-                        <li><a href="#"><span class="sr-only">Prev</span><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
-                        <li class="active"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#"><span class="sr-only">Next</span><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
-                    </ul>
+                    {{ $galleries->links() }}
                 </div>
+                
             </div>
+            
         </div>
     </div>
 </section>
