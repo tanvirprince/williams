@@ -35,9 +35,9 @@ class HomeController extends Controller
         return view('frontend.gallery', compact('galleries'));
     }
 
-    public function singleGallery($id)
+    public function singleGallery($slug)
     {
-        $gallery = Gallery::find($id);
+        $gallery = Gallery::where('slug', $slug)->first();
         return view('frontend.single-gallery', compact('gallery'));
     }
 

@@ -38,7 +38,7 @@
                                 </div>
                             </div>
                             <div class="item-content">
-                                <h4> <a href="{{ route('single-gallery', $gallery->id) }}">Click here for Details Page</a> </h4>
+                                <h4> <a href="{{ route('single-gallery', $gallery->slug) }}">Click here for Details Page</a> </h4>
                             </div>
                         </div>
                     </div>
