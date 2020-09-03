@@ -82,118 +82,22 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="isotope_container isotope row masonry-layout columns_margin_bottom_20">
-                        <div class="isotope-item col-xs-12 col-sm-4">
-                            <article class="vertical-item service-item content-padding big-padding with_shadow text-center">
-                                <div class="item-media-wrap">
-                                    <div class="item-media"> <img src="{{ asset('/') }}frontend/images/services/10.png" alt=""> <a href="service-single.html" class="abs-link"></a> </div>
-                                </div>
-                                <div class="item-content">
-                                    <h6 class="entry-title"> <a href="service-single.html">Iron section</a> </h6>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="isotope-item col-xs-12 col-sm-4">
-                            <article class="vertical-item service-item content-padding big-padding with_shadow text-center">
-                                <div class="item-media-wrap">
-                                    <div class="item-media"> <img src="{{ asset('/') }}frontend/images/services/10.png" alt=""> <a href="service-single.html" class="abs-link"></a> </div>
-                                </div>
-                                <div class="item-content">
-                                    <h6 class="entry-title"> <a href="service-single.html">Iron section</a> </h6>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="isotope-item col-xs-12 col-sm-4">
-                            <article class="vertical-item service-item content-padding big-padding with_shadow text-center">
-                                <div class="item-media-wrap">
-                                    <div class="item-media"> <img src="{{ asset('/') }}frontend/images/services/10.png" alt=""> <a href="service-single.html" class="abs-link"></a> </div>
-                                </div>
-                                <div class="item-content">
-                                    <h6 class="entry-title"> <a href="service-single.html">Iron section</a> </h6>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="isotope-item col-xs-12 col-sm-4">
-                            <article class="vertical-item service-item content-padding big-padding with_shadow text-center">
-                                <div class="item-media-wrap">
-                                    <div class="item-media"> <img src="{{ asset('/') }}frontend/images/services/10.png" alt=""> <a href="service-single.html" class="abs-link"></a> </div>
-                                </div>
-                                <div class="item-content">
-                                    <h6 class="entry-title"> <a href="service-single.html">Iron section</a> </h6>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="isotope-item col-xs-12 col-sm-4">
-                            <article class="vertical-item service-item content-padding big-padding with_shadow text-center">
-                                <div class="item-media-wrap">
-                                    <div class="item-media"> <img src="{{ asset('/') }}frontend/images/services/10.png" alt=""> <a href="service-single.html" class="abs-link"></a> </div>
-                                </div>
-                                <div class="item-content">
-                                    <h6 class="entry-title"> <a href="service-single.html">Iron section</a> </h6>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="isotope-item col-xs-12 col-sm-4">
-                            <article class="vertical-item service-item content-padding big-padding with_shadow text-center">
-                                <div class="item-media-wrap">
-                                    <div class="item-media"> <img src="{{ asset('/') }}frontend/images/services/10.png" alt=""> <a href="service-single.html" class="abs-link"></a> </div>
-                                </div>
-                                <div class="item-content">
-                                    <h6 class="entry-title"> <a href="service-single.html">Iron section</a> </h6>
-                                </div>
-                            </article>
-                        </div>
-                        {{-- <div class="isotope-item col-xs-12 col-sm-4">
-                            <article class="vertical-item service-item content-padding big-padding with_shadow text-center">
-                                <div class="item-media-wrap">
-                                    <div class="item-media"> <img src="{{ asset('/') }}frontend/images/services/11.png" alt=""> <a href="service-single.html" class="abs-link"></a> </div>
-                                </div>
-                                <div class="item-content">
-                                    <h6 class="entry-title"> <a href="service-single.html">Jacquard Section</a> </h6>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="isotope-item col-xs-12 col-sm-4">
-                            <article class="vertical-item service-item content-padding big-padding with_shadow text-center">
-                                <div class="item-media-wrap">
-                                    <div class="item-media"> <img src="{{ asset('/') }}frontend/images/services/12.png" alt=""> <a href="service-single.html" class="abs-link"></a> </div>
-                                </div>
-                                <div class="item-content">
-                                    <h6 class="entry-title"> <a href="service-single.html">Jacquard</a> </h6>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="isotope-item col-xs-12 col-sm-4">
-                            <article class="vertical-item service-item content-padding big-padding with_shadow text-center">
-                                <div class="item-media-wrap">
-                                    <div class="item-media"> <img src="{{ asset('/') }}frontend/images/services/15.png" alt=""> <a href="service-single.html" class="abs-link"></a> </div>
-                                </div>
-                                <div class="item-content">
-                                    <h6 class="entry-title"> <a href="service-single.html">Linking Section</a> </h6>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="isotope-item col-xs-12 col-sm-4">
-                            <article class="vertical-item service-item content-padding big-padding with_shadow text-center">
-                                <div class="item-media-wrap">
-                                    <div class="item-media"> <img src="{{ asset('/') }}frontend/images/services/14.png" alt=""> <a href="service-single.html" class="abs-link"></a> </div>
-                                </div>
-                                <div class="item-content">
-                                    <h6 class="entry-title"> <a href="service-single.html">Jacquard Section </a> </h6>
 
-                                </div>
-                            </article>
-                        </div>
+                        @foreach ($services as $service)
+
+
                         <div class="isotope-item col-xs-12 col-sm-4">
                             <article class="vertical-item service-item content-padding big-padding with_shadow text-center">
                                 <div class="item-media-wrap">
-                                    <div class="item-media"> <img src="{{ asset('/') }}frontend/images/services/16.png" alt=""> <a href="service-single.html" class="abs-link"></a> </div>
+                                    <div class="item-media"> <img src="{{ asset('/storage/'.$service->image) }}" alt="" height="50"> <a href="" class="abs-link"></a> </div>
                                 </div>
                                 <div class="item-content">
-                                    <h6 class="entry-title"> <a href="service-single.html">Store</a> </h6>
-
+                                    <h6 class="entry-title"> <a href="">{{ $service->name }}</a> </h6>
                                 </div>
                             </article>
-                        </div> --}}
+                        </div>
+
+                        @endforeach
                     </div>
                 </div>
             </div>
