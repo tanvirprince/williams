@@ -36,21 +36,34 @@
                 <h2>Get in Touch</h2>
                 <p>Your email address will not be published. We promise not to spam!</p>
                 <div class="toppadding_15"></div>
-                <form class="contact-form row" method="post" action="http://webdesign-finder.com/html/qtyler/">
-                    <div class="col-xs-12">
-                        <div class="form-group bottommargin_0"> <label for="name">Full Name</label> <input type="text" aria-required="true" size="30" value="" name="name" id="name" class="form-control with_icon" placeholder="Full Name"> <i class="qtyler-user grey"></i> </div>
+
+                @if (count($errors) > 0)
+                    <div class="alert alert-danger">
+                        <button type="button" class="close" data-dismiss="alert">×</button>
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
                     </div>
-                    <div class="col-xs-12">
-                        <div class="form-group bottommargin_0"> <label for="email">Email address</label> <input type="email" aria-required="true" size="30" value="" name="email" id="email" class="form-control with_icon" placeholder="Email Address"> <i class="qtyler-envelope grey"></i> </div>
+                @endif
+
+                <form method="post" action="{{ route('mail') }}">
+                    {{ csrf_field() }}
+                    <div class="form-group">
+                        <label>Enter Your Name</label>
+                        <input type="text" name="name" class="form-control" value="" />
                     </div>
-                    <div class="col-xs-12">
-                        <div class="form-group bottommargin_0"> <label for="phone">Phone Number</label> <input type="tel" size="30" value="" name="phone" id="phone" class="form-control with_icon" placeholder="Phone Number"> <i class="qtyler-phone grey"></i> </div>
+                    <div class="form-group">
+                        <label>Enter Your Email</label>
+                        <input type="text" name="email" class="form-control" value="" />
                     </div>
-                    <div class="col-xs-12">
-                        <div class="form-group bottommargin_0"> <label for="message">Your Message</label> <textarea aria-required="true" rows="3" cols="45" name="message" id="message" class="form-control with_icon" placeholder="Your Message"></textarea> <i class="qtyler-comment grey"></i> </div>
+                    <div class="form-group">
+                        <label>Enter Your Message</label>
+                        <textarea name="message" class="form-control"></textarea>
                     </div>
-                    <div class="col-xs-12 bottommargin_0">
-                        <div class="contact-form-submit"> <button type="submit" id="contact_form_submit" name="contact_submit" class="theme_button min_width_button margin_0">Submit now</button> </div>
+                    <div class="form-group">
+                        <input type="submit" name="send" class="btn btn-info" value="Send" />
                     </div>
                 </form>
             </div>

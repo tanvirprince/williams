@@ -20,6 +20,10 @@ class HomeController extends Controller
         return view('frontend.home.home', compact('services'));
 
     }
+    public function mail(Request $request){
+
+        return $request;
+    }
 
     public function management()
     {
