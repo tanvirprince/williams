@@ -48,6 +48,15 @@
                     </div>
                 @endif
 
+                @if($message = Session::get('seccess'))
+                    <div class="alert alert-success alert-block">
+                        <button type="button" class="close" data-dismiss="alert">x</button>
+                        <strong> {{ $message }}</strong>
+
+                    </div>
+
+                @endif
+
                 <form method="post" action="{{ route('mail') }}">
                     {{ csrf_field() }}
                     <div class="form-group">
