@@ -36,7 +36,7 @@
                     </header>
                     <div class="item-media-wrap">
                         <div class="entry-thumbnail item-media">
-                            <div class="embed-responsive embed-responsive-3by2"> <img src="{{ asset('/') }}frontend/images/blog/03.jpg" alt=""> <iframe width="420" height="345" src="https://www.youtube.com/embed/t2PnNhrTy94?autoplay=1"></iframe>
+                            <div class="embed-responsive embed-responsive-3by2"> <img src="{{ asset('/') }}frontend/images/blog/03.jpg" alt=""> <iframe width="420" height="345" src="https://www.youtube.com/embed/t2PnNhrTy94"></iframe>
                             </div>
                         </div>
                     </div>
@@ -46,7 +46,6 @@
                             <ul class="grey list2">
                                 <li>Nulla Audire Delenit Simul Suscipit Bonorum Ludus Amet</li>
                                 <li>Cibo Nemore Adversarium Mel Homero</li>
-                                
                             </ul>
                             <!-- eof .isotope_container.row -->
                         </div>
@@ -58,9 +57,9 @@
                     <h3 class="entry-title big"> <a href="blog-single-full.html">Audit SEDEX Report</a> </h3>
                     
                     <div class="author-meta side-item side-sm content-padding with_shadow with_social">
+                    <a href="{{ asset('/') }}frontend/images/a.pdf"><img src="{{ asset('/') }}frontend/images/a.png" alt="" width="100%" style=" width: 100%; height: 387px;"></a>
                     
-                    <iframe src="{{ asset('/') }}frontend/images/a.pdf" width="100%" height="500px">
-                    </iframe>
+                    {{-- <iframe src="{{ asset('/') }}frontend/images/a.pdf" width="100%" height="500px"></iframe> --}}
                 </div>
                 </div>
             </div>
@@ -72,8 +71,9 @@
     <div class="col-xs-12 col-md-12">
         <div class="col-md-6">
             <h2>Summary Audit Report</h2>
-            <iframe src="{{ asset('/') }}frontend/images/s.pdf" width="100%" height="500px">
-            </iframe>
+            <a href="{{ asset('/') }}frontend/images/s.pdf""><img src="{{ asset('/') }}frontend/images/s.png" alt="" width="100%" style=" width: 100%; height: 387px;"></a>
+            {{-- <iframe src="{{ asset('/') }}frontend/images/s.pdf" width="100%" height="500px">
+            </iframe> --}}
         </div>
         <div class="col-md-6">
             <div class="row">
