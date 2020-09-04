@@ -31,7 +31,7 @@ Route::group(['namespace'=>'Frontend'], function () {
 
 Auth::routes();
 
-Route::group(['middleware'=>'auth', 'namespace' => 'Backend'], function () {
+Route::group(['middleware'=>'auth', 'namespace' => 'Backend', 'prefix' => 'admin'], function () {
     Route::get('/home', 'HomeController@index')->name('home');
     Route::resource('service', 'ServiceController');
     Route::resource('galleries', 'GalleryController');
