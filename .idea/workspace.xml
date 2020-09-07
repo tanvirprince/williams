@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c06b2d46-4d1c-41f2-87b2-1a413daa4edc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/service/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/service/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/service/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/service/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/certification.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/certification.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/home/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/home/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/management.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/management.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/partial/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/partial/header.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="c06b2d46-4d1c-41f2-87b2-1a413daa4edc" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -311,6 +302,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -344,25 +336,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599462116262</updated>
-      <workItem from="1599462122739" duration="7941000" />
+      <workItem from="1599462122739" duration="8378000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7941000" />
+    <option name="totallyTimeSpent" value="8378000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="npm" side_tool="true" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" weight="0.82160395" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
