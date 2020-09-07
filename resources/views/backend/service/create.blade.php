@@ -18,7 +18,7 @@
         </div>
       <button type="submit" class="btn btn-primary">Create Service Process</button>
 
-      <button type="button" class="btn btn-success"> <i class="fas fa-flag"></i> Service List</button>
+      <a href="{{ route('service.index') }}" class="btn btn-info"> <i class="fas fa-flag"></i> Service List</a>
   </form>
 </div>
 @endsection

@@ -26,11 +26,11 @@
                 <div class="col-sm-6">
                 <article class="single-post post vertical-item">
                     <header class="entry-header">
-                        <h3 class="entry-title big"> <a href="blog-single-full.html">Company Video</a> </h3>
+                        <h3 class="entry-title big"> <a href="">Company Video</a> </h3>
                         <div class="entry-meta small-text big-spacing">
                             <div class="highlightlinks">
                                 <span class="categories-links">
-                        <a href="blog-full.html">Factory</a>
+                        <a href="">Factory</a>
                     </span> </div>
                         </div>
                     </header>
@@ -40,24 +40,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item-content">
-                        <div class="entry-content">
-                            
-                            <ul class="grey list2">
-                                <li>Nulla Audire Delenit Simul Suscipit Bonorum Ludus Amet</li>
-                                <li>Cibo Nemore Adversarium Mel Homero</li>
-                            </ul>
-                            <!-- eof .isotope_container.row -->
-                        </div>
-                        <!-- .entry-content -->
+                      <!-- .entry-content -->
                     <!-- .item-content -->
                 </article>
                 </div>
                 <div class="col-sm-6">
-                    <h3 class="entry-title big"> <a href="blog-single-full.html">Audit SEDEX Report</a> </h3>
+                    <h3 class="entry-title big"> <a href="">Audit SEDEX Report</a> </h3>
                     
                     <div class="author-meta side-item side-sm content-padding with_shadow with_social">
-                    <a href="{{ asset('/') }}frontend/images/a.pdf"><img src="{{ asset('/') }}frontend/images/a.png" alt="" width="100%" style=" width: 100%; height: 387px;"></a>
+                    <a href="{{ asset('/') }}frontend/images/a.pdf"><img src="{{ asset('/') }}frontend/images/a.jpg" alt="" width="100%" style=" width: 100%; height: 387px;"></a>
                     
                     {{-- <iframe src="{{ asset('/') }}frontend/images/a.pdf" width="100%" height="500px"></iframe> --}}
                 </div>
