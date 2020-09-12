@@ -65,6 +65,27 @@
             <a href="{{ asset('/') }}frontend/images/s.pdf""><img src="{{ asset('/') }}frontend/images/s.png" alt="" width="100%" style=" width: 100%; height: 387px;"></a>
         </div> --}}
 
+       
+        @if ($certificates->count() > 0)
+        @foreach ($certificates as $certificate)
+        <div class="col-md-6">
+            <div class="row">
+                <h3 class="entry-title big"> <a target="__blank" href="{{ asset('/storage/'.$certificate->pdf) }}">@if (isset($certificate->title)) {{ $certificate->title }} @else Certificate @endif</a> </h3>
+                    <div class="item-media"> <<a target="__blank" href="{{ asset('/storage/'.$certificate->pdf) }}"><img src="{{ asset('/storage/'.$certificate->image) }}" alt=""></a></div>
+                <div class="col-xs-12 col-sm-8">
+                    <div class="item-content">
+                        @if (isset($certificate->by))
+                        <header class="entry-header">
+                            <p class="small-text highlight">Certification by</p>
+                            <h3><a href="">{{ $certificate->by }} </a></h3>
+                        </header>
+                        @endif
+                    </div>
+                </div>
+            </div>
+        </div>
+        @endforeach
+        @else
         <div class="col-md-6">
             <div class="row">
                 <h3 class="entry-title big"> <a href="">Certification</a> </h3>
@@ -79,6 +100,7 @@
                 </div>
             </div>
         </div>
+        @endif
         
     </div>
 </div>

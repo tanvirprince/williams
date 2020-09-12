@@ -1,7 +1,7 @@
 @extends('backend.layouts.master')
 
 @section('title')
-    certificate List
+    Certificate List
 @endsection
 
 @section('extra-css')
@@ -22,7 +22,7 @@
    <!-- DataTales Example -->
    <div class="card shadow mb-4">
     <div class="card-header py-3">
-      <h6 class="m-0 font-weight-bold text-primary"><span>certificate List</span> <span style="float: right;"><a class="btn btn-success" href="{{ route('certificates.create') }}">Create new certificate</a></span></h6>
+      <h6 class="m-0 font-weight-bold text-primary"><span>Certificate List</span> <span style="float: right;"><a class="btn btn-success" href="{{ route('certificates.create') }}">Create new certificate</a></span></h6>
     </div>
     @if (session('success'))
     <div class="alert alert-success" role="alert">
@@ -51,7 +51,7 @@
               <td><img src="{{ asset('/storage/'.$certificate->image) }}" alt="" width="100px" height="50px"></td>
               <td><a target="__blank" href="{{ asset('/storage/'.$certificate->pdf) }}">Click Here</a></td>
               <td>
-                <a href="{{ route('certificates.edit', $certificate->id) }}" class="btn btn-sm btn-primary"> Edit </a>
+                {{-- <a href="{{ route('certificates.edit', $certificate->id) }}" class="btn btn-sm btn-primary"> Edit </a> --}}
                 <a href="{{ route('certificates.delete', $certificate->id) }}" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure to delete?')"> Delete </a>
               </td>
             </tr>
