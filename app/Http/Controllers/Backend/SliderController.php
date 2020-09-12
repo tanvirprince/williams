@@ -92,7 +92,7 @@ class SliderController extends Controller
             $file = Storage::disk('public')->put('slider', $request->file('image'));
             $slider->image = $file;
             $slider->save();
-            return redirect(route('galleries.index'))
+            return redirect(route('sliders.index'))
                     ->with('success', 'Slider Updated successfully');
         }
 

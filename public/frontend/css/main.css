@@ -3498,6 +3498,7 @@ html[xmlns] .slides {
 	margin: 0 0;
 	position: relative;
 	zoom: 1;
+	height: 500px;
 }
 
 .flex-viewport {
@@ -5472,6 +5473,26 @@ header [class*="col-"] {
 		float: none;
 	}
 }
+
+/* On screens that are 600px wide or less, the background color is olive by Hasib */ 
+@media screen and (max-width: 768px) {
+	.flexslider {
+		margin: 0 0;
+		position: relative;
+		zoom: 1;
+		height: auto !important;
+	}
+	.all-scr-cover .slide-image-wrap {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-size: cover;
+		background-position: center;
+		height: auto !important;
+	}
+  }
 
 @media (min-width: 992px) {
 	.table_section_md .container {
@@ -11697,6 +11718,7 @@ body.active-side-header.slide-right .page_header_side {
 	right: 0;
 	background-size: cover;
 	background-position: center;
+	height: 500px;
 }
 
 .slide-image-wrap img {

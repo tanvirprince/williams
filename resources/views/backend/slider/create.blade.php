@@ -11,7 +11,7 @@
     <form action="{{ route('sliders.store')}}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
-            <label for="image">Add Image</label>
+            <label for="image">Add Image <span style="font-size: 12px; color: red;">(Image size should be 1270*500)</span></label>
             <input type="file" name="image" class="form-control-file" id="image">
             <span class="text-danger">{{ $errors->has('image') ? $errors->first('image') : '' }}</span>
         </div>

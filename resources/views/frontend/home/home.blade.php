@@ -7,19 +7,15 @@
     <section class="intro_section page_mainslider cs all-scr-cover">
         <div class="flexslider" data-dots="false" data-nav="true">
             <ul class="slides">
+                @foreach ($sliders as $slider)
                 <li>
-                    <div class="slide-image-wrap"> <img src="{{ asset('/') }}frontend/images/slide7.png" alt="" /> </div>
-
-                    <!-- eof .container -->
-                </li>
-                <li>
-                    <div class="slide-image-wrap"> <img src="{{ asset('/') }}frontend/images/slide04.jpg" alt="" /> </div>
+                    <div class="slide-image-wrap"> <img src="{{ asset('/storage/'.$slider->image) }}" alt="" /> </div>
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-12">
                                 <div class="slide_description_wrapper">
                                     <div class="slide_description">
-                                        <div class="intro-layer to_animate" data-animation="fadeInUp">
+                                        {{-- <div class="intro-layer to_animate" data-animation="fadeInUp">
                                             <p> <span class="light_bg_color small-text">Women's Sweaters</span> </p>
                                         </div>
                                         <div class="intro-layer to_animate" data-animation="fadeInUp">
@@ -31,7 +27,7 @@
                                         </div>
                                         <div class="intro-layer to_animate" data-animation="fadeInUp">
                                             <div class="slide_buttons"> <a href="shop.html" class="theme_button min_width_button">go to shop</a> </div>
-                                        </div>
+                                        </div> --}}
                                     </div>
                                     <!-- eof .slide_description -->
                                 </div>
@@ -43,11 +39,8 @@
                     </div>
                     <!-- eof .container -->
                 </li>
-                <li>
-                    <div class="slide-image-wrap"> <img src="{{ asset('/') }}frontend/images/slide00.png" alt="" /> </div>
+                @endforeach
 
-
-                </li>
             </ul>
         </div>
 

@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Frontend;
+use App\Slider;
 use App\Gallery;
 use App\Service;
 use Illuminate\Http\Request;
@@ -17,7 +18,8 @@ class HomeController extends Controller
     public function index()
     {
         $services = Service::get();
-        return view('frontend.home.home', compact('services'));
+        $sliders = Slider::latest()->get();
+        return view('frontend.home.home', compact('services', 'sliders'));
 
     }
     public function mail(Request $request){
