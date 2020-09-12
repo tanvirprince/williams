@@ -7,6 +7,7 @@
     <section class="intro_section page_mainslider cs all-scr-cover">
         <div class="flexslider" data-dots="false" data-nav="true">
             <ul class="slides">
+                @if ($sliders->count() > 0)
                 @foreach ($sliders as $slider)
                 <li>
                     <div class="slide-image-wrap"> <img src="{{ asset('/storage/'.$slider->image) }}" alt="" /> </div>
@@ -40,6 +41,39 @@
                     <!-- eof .container -->
                 </li>
                 @endforeach
+                @else
+                <li>
+                    <div class="slide-image-wrap"> <img src="{{ asset('frontend/images/slide7.png') }}" alt="" /> </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="slide_description_wrapper">
+                                    <div class="slide_description">
+                                        {{-- <div class="intro-layer to_animate" data-animation="fadeInUp">
+                                            <p> <span class="light_bg_color small-text">Women's Sweaters</span> </p>
+                                        </div>
+                                        <div class="intro-layer to_animate" data-animation="fadeInUp">
+                                            <p> <span class="hero-text"> 2020<i></i></span> </p>
+                                            <!--text hero bad dilam -->
+                                        </div>
+                                        <div class="intro-layer to_animate" data-animation="fadeInUp">
+                                            <p> <span class="small-text big-spacing">Summer Collection</span> </p>
+                                        </div>
+                                        <div class="intro-layer to_animate" data-animation="fadeInUp">
+                                            <div class="slide_buttons"> <a href="shop.html" class="theme_button min_width_button">go to shop</a> </div>
+                                        </div> --}}
+                                    </div>
+                                    <!-- eof .slide_description -->
+                                </div>
+                                <!-- eof .slide_description_wrapper -->
+                            </div>
+                            <!-- eof .col-* -->
+                        </div>
+                        <!-- eof .row -->
+                    </div>
+                    <!-- eof .container -->
+                </li>
+                @endif
 
             </ul>
         </div>
@@ -74,10 +108,7 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="isotope_container isotope row masonry-layout columns_margin_bottom_20">
-
                         @foreach ($services as $service)
-
-
                         <div class="isotope-item col-xs-12 col-sm-4">
                             <article class="vertical-item service-item content-padding big-padding with_shadow text-center">
                                 <div class="item-media-wrap">

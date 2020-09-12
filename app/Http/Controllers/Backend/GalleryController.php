@@ -121,10 +121,10 @@ class GalleryController extends Controller
     public function delete($id)
     {
         $gallery = Gallery::find($id);
-            Storage::disk('public')->delete('gallery', $gallery->image);
-            $gallery->delete();
+        Storage::disk('public')->delete('gallery', $gallery->image);
+        $gallery->delete();
 
-            return redirect(route('galleries.index'))
+        return redirect(route('galleries.index'))
                 ->with('success', 'Gallery Deleted successfully');
 
     }

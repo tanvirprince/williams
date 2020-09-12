@@ -48,10 +48,10 @@
                     <h3 class="entry-title big"> <a href="">Audit SEDEX Report</a> </h3>
                     
                     <div class="author-meta side-item side-sm content-padding with_shadow with_social">
-                    <a href="{{ asset('/') }}frontend/images/a.pdf"><img src="{{ asset('/') }}frontend/images/a.jpg" alt="" width="100%" style=" width: 100%; height: 387px;"></a>
-                    
-                    {{-- <iframe src="{{ asset('/') }}frontend/images/a.pdf" width="100%" height="500px"></iframe> --}}
-                </div>
+                        <a href="{{ asset('/') }}frontend/images/a.pdf"><img src="{{ asset('/') }}frontend/images/a.jpg" alt="" width="100%" style=" width: 100%; height: 387px;"></a>
+                        
+                        {{-- <iframe src="{{ asset('/') }}frontend/images/a.pdf" width="100%" height="500px"></iframe> --}}
+                    </div>
                 </div>
             </div>
             <!--eof .col-sm-8 (main content)-->
@@ -60,12 +60,11 @@
 </section>
 <div class="container-fluid">
     <div class="col-xs-12 col-md-12">
-        <div class="col-md-6">
+        {{-- <div class="col-md-6">
             <h2>Summary Audit Report</h2>
             <a href="{{ asset('/') }}frontend/images/s.pdf""><img src="{{ asset('/') }}frontend/images/s.png" alt="" width="100%" style=" width: 100%; height: 387px;"></a>
-            {{-- <iframe src="{{ asset('/') }}frontend/images/s.pdf" width="100%" height="500px">
-            </iframe> --}}
-        </div>
+        </div> --}}
+
         <div class="col-md-6">
             <div class="row">
                 <h3 class="entry-title big"> <a href="">Certification</a> </h3>
@@ -80,6 +79,7 @@
                 </div>
             </div>
         </div>
+        
     </div>
 </div>
 
