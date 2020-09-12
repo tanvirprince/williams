@@ -39,5 +39,7 @@ Route::group(['middleware'=>'auth', 'namespace' => 'Backend', 'prefix' => 'admin
     Route::resource('galleries', 'GalleryController');
     Route::get('galleries/delete/{id}', 'GalleryController@delete')->name('galleries.delete');
     Route::get('service/delete/{id}', 'ServiceController@delete')->name('service.delete');
+    Route::resource('sliders', 'SliderController');
+    Route::get('sliders/delete/{id}', 'SliderController@delete')->name('sliders.delete');
 });
 

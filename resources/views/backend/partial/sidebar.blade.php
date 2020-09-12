@@ -41,6 +41,20 @@
         </div>
     </li>
 
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSlider" aria-expanded="true" aria-controls="collapseSlider">
+            <i class="fas fa-fw fa-image"></i>
+            <span>Slider Management</span>
+        </a>
+        <div id="collapseSlider" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Slider</h6>
+                <a class="collapse-item" href="{{ route('sliders.index') }}">Manage Slider</a>
+                <a class="collapse-item" href="{{ route('sliders.create') }}">Add new Slider</a>
+            </div>
+        </div>
+    </li>
+
     <!-- Nav Item - Utilities Collapse Menu -->
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">

@@ -75,7 +75,6 @@ class GalleryController extends Controller
     public function edit($id)
     {
         $gallery = Gallery::find($id);
-        // return $gallery->date;
         return view('backend.gallery.edit', compact('gallery'));
     }
 
