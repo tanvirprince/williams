@@ -179,34 +179,7 @@
     </section>
 
 
-    <section class="ls section_padding_top_150 section_padding_bottom_150">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-6">
-                    <h2 class="section_header">Why Choose Us</h2>
-                    <p class="small-text grey">our advantages</p>
-                    <p>Has id simul tantas maiorum, qui dicat accusam atomorum id, sea ei ex populo voluptatibus. Sed perfecto petentium voluptatibus eu, ne illum fabellas pri. Veri everti aperiam vix ea. Illud laoreet cum cu. Autem has percipit verterem est cu, pri
-                        habeo persius dignissim ex, mei at aliquid quaestio. Vim at detracto rationibus. Pri te nisl zril placerat, ei nam cum euismod ponderum, mazim scripserit vix an. Semper feugait fabellas ei usu delectus temporibus quo id.</p>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <div class="isotope_container isotope row masonry-layout images-grid columns_margin_bottom_20">
-                        <div class="isotope-item col-xs-6">
-                            <div class="with_shadow text-center"> <img src="{{ asset('/') }}frontend/images/features/01.jpg" alt=""> </div>
-                        </div>
-                        <div class="isotope-item col-xs-6">
-                            <div class="with_shadow text-center"> <img src="{{ asset('/') }}frontend/images/features/02.jpg" alt=""> </div>
-                        </div>
-                        <div class="isotope-item col-xs-6">
-                            <div class="with_shadow text-center"> <img src="{{ asset('/') }}frontend/images/features/03.jpg" alt=""> </div>
-                        </div>
-                        <div class="isotope-item col-xs-6">
-                            <div class="with_shadow text-center"> <img src="{{ asset('/') }}frontend/images/features/04.jpg" alt=""> </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
 
 

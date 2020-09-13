@@ -43,5 +43,8 @@ Route::group(['middleware'=>'auth', 'namespace' => 'Backend', 'prefix' => 'admin
     Route::get('sliders/delete/{id}', 'SliderController@delete')->name('sliders.delete');
     Route::resource('certificates', 'CertificateController');
     Route::get('certificates/delete/{id}', 'CertificateController@delete')->name('certificates.delete');
+    Route::resource('brand', 'BrandController');
+    Route::get('brand/delete/{id}', 'BrandController@delete')->name('brand.delete');
+
 });
 
