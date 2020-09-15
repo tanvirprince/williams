@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Frontend;
+use App\Brand;
 use App\Slider;
 use App\Gallery;
 use App\Service;
@@ -20,7 +21,8 @@ class HomeController extends Controller
     {
         $services = Service::get();
         $sliders = Slider::latest()->get();
-        return view('frontend.home.home', compact('services', 'sliders'));
+        $brands = Brand::latest()->get();
+        return view('frontend.home.home', compact('services', 'sliders','brands'));
 
     }
     public function mail(Request $request){

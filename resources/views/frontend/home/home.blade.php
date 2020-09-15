@@ -136,42 +136,13 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="isotope_container isotope row masonry-layout images-grid columns_margin_bottom_20">
+
+                        @foreach($brands as $brand)
                         <div class="isotope-item col-xs-4 col-sm-3"> <a href="#" class="with_shadow">
-                                <img src="{{ asset('/') }}frontend/images/partners/01.jpg" alt="">
+                                <img src="{{ asset('/storage/'.$brand->image) }}" alt="">
                             </a> </div>
-                        <div class="isotope-item col-xs-4 col-sm-3"> <a href="#" class="with_shadow">
-                                <img src="{{ asset('/') }}frontend/images/partners/02.jpg" alt="">
-                            </a> </div>
-                        <div class="isotope-item col-xs-4 col-sm-3"> <a href="#" class="with_shadow">
-                                <img src="{{ asset('/') }}frontend/images/partners/03.jpg" alt="">
-                            </a> </div>
-                        <div class="isotope-item col-xs-4 col-sm-3"> <a href="#" class="with_shadow">
-                                <img src="{{ asset('/') }}frontend/images/partners/04.jpg" alt="">
-                            </a> </div>
-                        <div class="isotope-item col-xs-4 col-sm-3"> <a href="#" class="with_shadow">
-                                <img src="{{ asset('/') }}frontend/images/partners/05.jpg" alt="">
-                            </a> </div>
-                        <div class="isotope-item col-xs-4 col-sm-3"> <a href="#" class="with_shadow">
-                                <img src="{{ asset('/') }}frontend/images/partners/06.jpg" alt="">
-                            </a> </div>
-                        <div class="isotope-item col-xs-4 col-sm-3"> <a href="#" class="with_shadow">
-                                <img src="{{ asset('/') }}frontend/images/partners/07.jpg" alt="">
-                            </a> </div>
-                        <div class="isotope-item col-xs-4 col-sm-3"> <a href="#" class="with_shadow">
-                                <img src="{{ asset('/') }}frontend/images/partners/08.jpg" alt="">
-                            </a> </div>
-                        <div class="isotope-item col-xs-4 col-sm-3"> <a href="#" class="with_shadow">
-                                <img src="{{ asset('/') }}frontend/images/partners/09.jpg" alt="">
-                            </a> </div>
-                        <div class="isotope-item col-xs-4 col-sm-3"> <a href="#" class="with_shadow">
-                                <img src="{{ asset('/') }}frontend/images/partners/10.jpg" alt="">
-                            </a> </div>
-                        <div class="isotope-item col-xs-4 col-sm-3"> <a href="#" class="with_shadow">
-                                <img src="{{ asset('/') }}frontend/images/partners/11.jpg" alt="">
-                            </a> </div>
-                        <div class="isotope-item col-xs-4 col-sm-3"> <a href="#" class="with_shadow">
-                                <img src="{{ asset('/') }}frontend/images/partners/12.jpg" alt="">
-                            </a> </div>
+
+                        @endforeach
                     </div>
                 </div>
             </div>
