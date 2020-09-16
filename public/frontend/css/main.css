@@ -13624,7 +13624,7 @@ article.side-item + article.side-item {
 		display: -webkit-box;
 		max-height: 11.15em;
 		-webkit-line-clamp: 5;
-		overflow: hidden;
+		overflow: auto;
 		text-overflow: ellipsis;
 	}
 }

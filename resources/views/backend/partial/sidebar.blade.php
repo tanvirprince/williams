@@ -42,6 +42,19 @@
     </li>
 
     <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#managements" aria-expanded="true" aria-controls="managements">
+            <i class="fas fa-fw fa-user"></i>
+            <span>Management</span>
+        </a>
+        <div id="managements" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Management</h6>
+                <a class="collapse-item" href="{{ route('managements.create') }}">Add Managements</a>
+            </div>
+        </div>
+    </li>
+
+    <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSlider" aria-expanded="true" aria-controls="collapseSlider">
             <i class="fas fa-fw fa-image"></i>
             <span>Slider Management</span>

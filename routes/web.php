@@ -46,6 +46,9 @@ Route::group(['middleware'=>'auth', 'namespace' => 'Backend', 'prefix' => 'admin
     Route::resource('brand', 'BrandController');
     Route::resource('about', 'AboutController');
     Route::get('brand/delete/{id}', 'BrandController@delete')->name('brand.delete');
-
+    
+    Route::get('managements', 'ManagementController@create')->name('managements.create');
+    Route::post('managements', 'ManagementController@store')->name('managements.store');
+    Route::put('managements', 'ManagementController@update')->name('managements.update');
 });
 

@@ -5,6 +5,7 @@ use App\Brand;
 use App\Slider;
 use App\Gallery;
 use App\Service;
+use App\Management;
 use App\Certificate;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -32,7 +33,8 @@ class HomeController extends Controller
 
     public function management()
     {
-        return view('frontend.management');
+        $management = Management::latest()->first();
+        return view('frontend.management', compact('management'));
     }
 
     public function certification()

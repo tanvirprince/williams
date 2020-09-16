@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="{{asset('/')}}frontend/css/main.css" class="color-switcher-link">
     <link rel="stylesheet" href="{{asset('/')}}frontend/css/shop.css" class="color-switcher-link">
     <script src="{{asset('/')}}frontend/js/vendor/modernizr-2.6.2.min.js"></script>
+    @yield('extra-css')
 
 </head>
 
