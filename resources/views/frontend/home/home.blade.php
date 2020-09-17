@@ -85,18 +85,11 @@
     <section class="ls section_padding_bottom_150">
 
         <div class="container-fluid row">
-            <div class="col-xs-12"> <img src="{{ asset('/') }}frontend/images/company.png" class="alignright" alt="">
+            <div class="col-xs-12"> <img src="{{ asset('/storage/'.$about->image) }}" class="alignright" alt="">
                 <h3 class="section_header topmargin_0">Williams Sweaters Ltd.</h3>
-                <p class="small-text grey">About our comapny</p>
-                <p>Williams Sweaters Limited is one of the important and 100% export oriented sweater factory started its successful operation from 21st November 2012. It has a team of highly motivated and dedicated professionals and workers to provide our buyer with the highest quality products. We ensure all activities of sweater manufacturing are done through documented quality management system at every stage. Williams Sweaters Limited also follows the standard operating procedures in every process to meet buyer’s requirement properly.  </p>
-                <ul class="list2 grey">
-                    <p class="small-text grey"> Product</p>
-                    <li>Sweaters, pullovers, cardigans, jumpers, vests, scarfs, woolen caps etc. in various basic and fashionable designs for men, ladies. </li>
-                    <p class="small-text grey">Style & Design</p>
-                    <li>Jersey knit, rib, drop needle, diamond, cable, pine apple, drop, auto mine, zigzag, pointal, combo, fancy cable, etc. as per buyer’s requirement.                                                                                                             </li>
-                    <p class="small-text grey">Using Yarn:</p>
-                    <li>100% Acrylic (Normal), 100% Acrylic (Mélange), 100% Acrylic (Nap), 100% Acrylic (Cotton Like), 100% Acrylic (Cashmere Like), 100% Acrylic (Chenille), 100% Acrylic (Smiling), 85% Acrylic 15% Wool, 70% Acrylic 30% Wool, 50% Acrylic 50% Wool, 30% Acrylic 70% Wool, 100% Cotton, 50% Cotton 50% Acrylic, 45% Cotton 55% Acrylic, 80% Acrylic 20% Nylon Etc. </li>
-                </ul>
+                <p class="small-text grey">{{ $about->title }}</p>
+                <p>{!! $about->body !!}   </p>
+
 
             </div>
         </div>
