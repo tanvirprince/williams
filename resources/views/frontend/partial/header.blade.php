@@ -18,8 +18,7 @@
                             </li>
                         </ul>
                     </nav>
-                    <!-- eof main nav -->
-                    <!-- header toggler --><span class="toggle_menu"><span></span></span>
+                    <span class="toggle_menu"><span></span></span>
                 </div>
                 <div class="header_right_buttons text-right">
                     <ul class="inline-dropdown inline-block">
