@@ -8213,7 +8213,7 @@ a.abs-link:hover {
 .logo img {
 	-webkit-backface-visibility: visible;
 	backface-visibility: visible;
-	max-width: 190px;
+	max-width: 250px;
 }
 
 @media (min-width: 1600px) {
