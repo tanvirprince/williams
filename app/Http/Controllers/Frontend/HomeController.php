@@ -28,6 +28,14 @@ class HomeController extends Controller
         return view('frontend.home.home', compact('services', 'sliders','brands','about'));
 
     }
+
+    public function ourstory(){
+        $about = About::latest()->first();
+        return view('frontend.ourstory', compact('about'));
+
+
+    }
+
     public function mail(Request $request){
 
         return $request;

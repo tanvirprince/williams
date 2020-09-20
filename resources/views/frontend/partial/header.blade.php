@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-sm-12 display-flex v-center">
                 <div class="header_left_logo"> <a href="{{ route('homepage') }}" class="logo">
-                        <img src="{{ asset('/') }}frontend/images/logo4.png" alt="">
+                        <img src="{{ asset('/') }}frontend/images/logo6.png" alt="">
                     </a> </div>
                 <div class="header_mainmenu text-center">
                     <!-- main nav start -->
@@ -12,12 +12,11 @@
                             <li class="{{ request()->is('/') ? 'active' : ''}}"><a href="{{ route('homepage') }}">Home</a></li>
                             <li class="{{ request()->is('management') ? 'active' : ''}}"><a href=""> About us </a>
                                 <ul>
-                                    <li> <a href=""> Our Story </a> </li>
+                                    <li> <a href="{{ route('ourstory') }}"> Our Story </a> </li>
                                     <li> <a href="{{ route('management') }}">Board of Directory</a> </li>
                                     <li> <a href="{{ route('certification') }}">CERTIFICATION</a> </li>
                                 </ul>
                             </li>
-{{--                            <li class="{{ request()->is('certification') ? 'active' : ''}}"><a href="{{ route('certification') }}"> Certification</a></li>--}}
                             <li class="{{ request()->is('gallery') ? 'active' : ''}}"><a href="{{ route('gallery') }}"> Product Gallary</a></li>
                             <li class=""><a href="{{ route('gallery') }}"> Sustainbility </a></li>
                             <li class="{{ request()->is('contact') ? 'active' : ''}}"><a href="{{ route('contact') }}">Contact</a></li>

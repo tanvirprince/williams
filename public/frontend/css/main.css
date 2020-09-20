@@ -8243,7 +8243,7 @@ a.abs-link:hover {
 
 .header_color .logo,
 .header_darkgrey .logo {
-	color: #ffffff;
+	color: #000000;
 }
 
 .floating_logo .logo {
@@ -12018,7 +12018,7 @@ body.active-side-header.slide-right .page_header_side {
 	}
 
 	.header_darkgrey.with_menu_icon .mainmenu_wrapper:after {
-		color: #ffffff;
+		color: #bbbac1;
 	}
   /* menu layout */
 	.sf-menu, .sf-menu ul {
@@ -12184,7 +12184,7 @@ body.active-side-header.slide-right .page_header_side {
 
 	.sf-menu ul a:hover,
   .sf-menu ul li.active > a {
-		color: #e44a7a;
+		color: #000000;
 	}
   /* third level */
 	.sf-menu ul ul {
