@@ -1,4 +1,4 @@
-<header class="page_header header_white header_v1 toggler_xxs_right">
+<header class="page_header  header_white header_v1 toggler_xxs_right">
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12 display-flex v-center">

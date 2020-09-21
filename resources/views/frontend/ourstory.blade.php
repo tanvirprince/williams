@@ -29,8 +29,10 @@
         </div>
     </section>
     <br>
-    <section class="ls section_padding_bottom_150">
 
+
+    <section class="ls section_padding_bottom_150">
+    @if($about)
         <div class="container-fluid row">
             <div class="col-xs-12">
                 <img src="{{ asset('/storage/'.$about->image) }}" class="alignright" alt="">
@@ -41,6 +43,15 @@
 
             </div>
         </div>
+    @else
+            <div class="col-xs-12"> <img src="{{ asset('/') }}frontend/images/company.png" class="alignright" alt="">
+                <h3 class="section_header topmargin_0">Our Story</h3>
+                <p class="small-text grey">Welcome to About Us</p>
+                <p> insert description from admin panel   </p>
+
+
+            </div>
+    @endif
     </section>
 
 @endsection

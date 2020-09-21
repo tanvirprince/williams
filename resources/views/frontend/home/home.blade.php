@@ -84,6 +84,8 @@
 
     <section class="ls section_padding_bottom_150">
 
+        @if($about)
+
         <div class="container-fluid row">
             <div class="col-xs-12"> <img src="{{ asset('/storage/'.$about->image) }}" class="alignright" alt="">
                 <h3 class="section_header topmargin_0">Williams Sweaters Ltd.</h3>
@@ -93,6 +95,18 @@
 
             </div>
         </div>
+        @else
+            <div class="container-fluid row">
+                <div class="col-xs-12"> <img src="{{ asset('/') }}frontend/images/company.png" class="alignright" alt="">
+                    <h3 class="section_header topmargin_0">Williams Sweaters Ltd.</h3>
+                    <p class="small-text grey">Welcome to Williams</p>
+                    <p> insert description from admin panel   </p>
+
+
+                </div>
+            </div>
+         @endif
+
     </section>
 
     <h3 class="text-center section_header topmargin_0">Service Process</h3>
