@@ -1,7 +1,7 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('home') }}">
         <div class="sidebar-brand-icon rotate-n-15">
             <i class="fas fa-laugh-wink"></i>
         </div>
@@ -26,7 +26,34 @@
         Interface
     </div>
 
-    <!-- Nav Item - Pages Collapse Menu -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSlider" aria-expanded="true" aria-controls="collapseSlider">
+            <i class="fas fa-fw fa-image"></i>
+            <span>Slider Management</span>
+        </a>
+        <div id="collapseSlider" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Slider</h6>
+                <a class="collapse-item" href="{{ route('sliders.index') }}">Manage Slider</a>
+                <a class="collapse-item" href="{{ route('sliders.create') }}">Add new Slider</a>
+            </div>
+        </div>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAbout" aria-expanded="true" aria-controls="collapseUtilities">
+            <i class="fas fa-info-circle"></i>
+            <span> About Us </span>
+        </a>
+        <div id="collapseAbout" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Home | about  </h6>
+                <a class="collapse-item" href="{{ route('about.create') }}">Update Our Story</a>
+
+            </div>
+        </div>
+    </li>
+
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
             <i class="fas fa-fw fa-image"></i>
@@ -37,6 +64,20 @@
                 <h6 class="collapse-header">Gallary Product</h6>
                 <a class="collapse-item" href="{{ route('galleries.index') }}">Manage Gallary</a>
                 <a class="collapse-item" href="{{ route('galleries.create') }}">Add Product to Gallary</a>
+            </div>
+        </div>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsecertificate" aria-expanded="true" aria-controls="collapsecertificate">
+            <i class="fas fa-file"></i>
+            <span>Certificate Management</span>
+        </a>
+        <div id="collapsecertificate" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Certificate</h6>
+                <a class="collapse-item" href="{{ route('certificates.index') }}">Manage Certificate</a>
+                <a class="collapse-item" href="{{ route('certificates.create') }}">Add new Certificate</a>
             </div>
         </div>
     </li>
@@ -57,35 +98,6 @@
     </li>
 
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSlider" aria-expanded="true" aria-controls="collapseSlider">
-            <i class="fas fa-fw fa-image"></i>
-            <span>Slider Management</span>
-        </a>
-        <div id="collapseSlider" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Slider</h6>
-                <a class="collapse-item" href="{{ route('sliders.index') }}">Manage Slider</a>
-                <a class="collapse-item" href="{{ route('sliders.create') }}">Add new Slider</a>
-            </div>
-        </div>
-    </li>
-
-    <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsecertificate" aria-expanded="true" aria-controls="collapsecertificate">
-            <i class="fas fa-file"></i>
-            <span>Certificate Management</span>
-        </a>
-        <div id="collapsecertificate" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Certificate</h6>
-                <a class="collapse-item" href="{{ route('certificates.index') }}">Manage Certificate</a>
-                <a class="collapse-item" href="{{ route('certificates.create') }}">Add new Certificate</a>
-            </div>
-        </div>
-    </li>
-
-    <!-- Nav Item - Utilities Collapse Menu -->
-    <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
             <i class="fas fa-fw fa-wrench"></i>
             <span>Service </span>
@@ -95,6 +107,22 @@
                 <h6 class="collapse-header">Service Process</h6>
             <a class="collapse-item" href="{{ route('service.index')}}">Manage Service</a>
             <a class="collapse-item" href="{{ route('service.create') }}">Add Service</a>
+
+            </div>
+        </div>
+    </li>
+
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#sustainabilities" aria-expanded="true" aria-controls="sustainabilities">
+            <i class="fas fa-fw fa-wrench"></i>
+            <span>Sustainability </span>
+        </a>
+        <div id="sustainabilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Sustainability Process</h6>
+            <a class="collapse-item" href="{{ route('sustainabilities.index')}}">Manage Sustainability</a>
+            <a class="collapse-item" href="{{ route('sustainabilities.create') }}">Add Sustainability</a>
 
             </div>
         </div>
@@ -112,21 +140,6 @@
                 <h6 class="collapse-header">Brand or Clients </h6>
                 <a class="collapse-item" href="{{ route('brand.index')}}">Manage Brand</a>
                 <a class="collapse-item" href="{{ route('brand.create') }}">Add Brand</a>
-
-            </div>
-        </div>
-    </li>
-
-
-    <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAbout" aria-expanded="true" aria-controls="collapseUtilities">
-            <i class="fas fa-fw fa-wrench"></i>
-            <span> About Us </span>
-        </a>
-        <div id="collapseAbout" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Home | about  </h6>
-                <a class="collapse-item" href="{{ route('about.create') }}">Update Our Story</a>
 
             </div>
         </div>

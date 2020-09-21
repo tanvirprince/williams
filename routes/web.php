@@ -54,5 +54,8 @@ Route::group(['middleware'=>'auth', 'namespace' => 'Backend', 'prefix' => 'admin
 
     Route::resource('management2', 'Management2Controller');
     Route::resource('management3', 'Management3Controller');
+
+    Route::resource('sustainabilities', 'SustainabilityController');
+    Route::get('sustainabilities/delete/{id}', 'SustainabilityController@delete')->name('sustainabilities.delete');
 });
 
