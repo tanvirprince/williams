@@ -49,7 +49,9 @@
         <div id="managements" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Management</h6>
-                <a class="collapse-item" href="{{ route('managements.create') }}">Add Managements</a>
+                <a class="collapse-item" href="{{ route('managements.create') }}">Managing Director</a>
+                <a class="collapse-item" href="{{ route('management2.create') }}">Management Two</a>
+                <a class="collapse-item" href="{{ route('management3.create') }}">Management Three</a>
             </div>
         </div>
     </li>
@@ -119,12 +121,12 @@
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAbout" aria-expanded="true" aria-controls="collapseUtilities">
             <i class="fas fa-fw fa-wrench"></i>
-            <span> About Company </span>
+            <span> About Us </span>
         </a>
         <div id="collapseAbout" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Home | about  </h6>
-                <a class="collapse-item" href="{{ route('about.create') }}">Update Brand</a>
+                <a class="collapse-item" href="{{ route('about.create') }}">Update Our Story</a>
 
             </div>
         </div>

@@ -43,8 +43,11 @@ class HomeController extends Controller
 
     public function management()
     {
-        $management = Management::latest()->first();
-        return view('frontend.management', compact('management'));
+        $management = Management::find(1);
+        $management_two = Management::find(2);
+        $management_three = Management::find(3);
+
+        return view('frontend.management', compact('management','management_two','management_three'));
     }
 
     public function certification()

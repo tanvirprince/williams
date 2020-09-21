@@ -20,7 +20,7 @@
                 <h1 class="sr-only">Team</h1>
                 <ol class="breadcrumb">
                     <li> 
-                     <h3> Management Profile </h3>  </li>
+                     <h3> Board of Directories </h3>  </li>
                 </ol>
             </div>
         </div>
@@ -36,7 +36,7 @@
                         <div class="col-sm-4">
                             <div class="item-media "> <img src="{{ asset('/storage/'.$management->image) }}" alt=""> </div>
                         </div>
-                        <div class="col-sm-8">
+                        <div class="col-sm-10">
                             <div class="item-content">
                                 <header class="entry-header">
                                     <h3 class="entry-title"> <a href="">{{ $management->name }}</a> </h3>
@@ -67,25 +67,49 @@
                     </div>
                 </article>
                 @endif
+
+{{--                last two row data of management --}}
+                    <article class="team-item side-item side-sm content-padding big-padding text-center text-sm-left with_shadow with_social">
+                        <div class="row">
+
+                            <div class="col-sm-10">
+                                <div class="item-content">
+                                    <header class="entry-header">
+                                        <h3 class="entry-title"> <a href="">{{ $management_two->name }}</a> </h3>
+                                        <p class="small-text highlight"> {{$management_two->designation }}</p>
+                                    </header>
+                                    <div class="entry-content">{!! $management_two->editor1 !!}</div>
+                                </div>
+                                <div class="item-social"> <a href="#" class="social-icon dark-icon socicon-facebook"></a> <a href="#" class="social-icon dark-icon socicon-twitter"></a> <a href="#" class="social-icon dark-icon socicon-googleplus"></a> <a href="#" class="social-icon dark-icon socicon-linkedin"></a>											<a href="#" class="social-icon dark-icon socicon-instagram"></a> </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="item-media "> <img src="{{ asset('/storage/'.$management_two->image) }}" alt=""> </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="team-item side-item side-sm content-padding big-padding text-center text-sm-left with_shadow with_social">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="item-media "> <img src="{{ asset('/storage/'.$management_three->image) }}" alt=""> </div>
+                            </div>
+                            <div class="col-sm-10">
+                                <div class="item-content">
+                                    <header class="entry-header">
+                                        <h3 class="entry-title"> <a href="">{{ $management_three->name }}</a> </h3>
+                                        <p class="small-text highlight"> {{$management_three->designation }}</p>
+                                    </header>
+                                    <div class="entry-content">{!! $management_three->editor1 !!}</div>
+                                </div>
+                                <div class="item-social"> <a href="#" class="social-icon dark-icon socicon-facebook"></a> <a href="#" class="social-icon dark-icon socicon-twitter"></a> <a href="#" class="social-icon dark-icon socicon-googleplus"></a> <a href="#" class="social-icon dark-icon socicon-linkedin"></a>											<a href="#" class="social-icon dark-icon socicon-instagram"></a> </div>
+                            </div>
+                        </div>
+                    </article>
+
             </div>
         </div>
     </div>
 </section>
 
-<section class="ls section_padding_top_150 section_padding_bottom_150">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3 text-center">
-                <h2 class="section_header small">Our Newsletter</h2>
-                <p class="small-text grey">subscribe</p>
-                <div class="widget widget_mailchimp">
-                    <form class="signup" action="http://webdesign-finder.com/html/qtyler/" method="get">
-                        <div class="form-group"> <input class="mailchimp_email form-control" name="email" type="email" placeholder="Email Address"> <button type="submit" class="theme_button">Sign Up!</button> </div>
-                        <div class="response"></div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 @endsection

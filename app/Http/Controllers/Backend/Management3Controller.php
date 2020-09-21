@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers\Backend;
 
+use App\Http\Controllers\Controller;
+use App\Http\Requests\Management2Request;
+use App\Http\Requests\Management3Request;
 use App\Management;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\ManagementRequest;
 use Illuminate\Support\Facades\Storage;
 
-class ManagementController extends Controller
+class Management3Controller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,7 +18,7 @@ class ManagementController extends Controller
      */
     public function index()
     {
-        //
+
     }
 
     /**
@@ -27,8 +28,8 @@ class ManagementController extends Controller
      */
     public function create()
     {
-        $management = Management::find(1);
-        return view('backend.management.create', compact('management'));
+        $management = Management::find(3);
+        return view('backend.management3.create', compact('management'));
     }
 
     /**
@@ -37,7 +38,7 @@ class ManagementController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(ManagementRequest $request)
+    public function store(Management3Request $request)
     {
         $file = '';
         if ($request->hasFile('image')){
@@ -50,8 +51,8 @@ class ManagementController extends Controller
         $management->editor1 = $request->editor1;
         $management->save();
 
-        return redirect(route('managements.create'))
-                ->with('success', 'management Added successfully');
+        return redirect(route('management3.create'))
+            ->with('success', 'management Added successfully');
     }
 
     /**
@@ -83,10 +84,10 @@ class ManagementController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(ManagementRequest $request)
+    public function update(Management3Request $request)
     {
         $file = '';
-        $management = Management::find(1);
+        $management = Management::find(3);
         if ($request->hasFile('image')) {
             if ($request->hasFile('image')) {
                 Storage::disk('public')->delete('management', $management->image);
@@ -102,9 +103,9 @@ class ManagementController extends Controller
             $management->designation = $request->designation;
             $management->editor1 = $request->editor1;
             $management->save();
-        } 
-        return redirect(route('managements.create'))
-                ->with('success', 'Management Updated successfully');
+        }
+        return redirect(route('management3.create'))
+            ->with('success', 'Management Updated successfully');
     }
 
     /**

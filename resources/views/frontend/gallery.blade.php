@@ -33,7 +33,7 @@
                     <a href="#" data-filter=".Ladies">Ladies</a> 
                     <a href="#" data-filter=".Boys">Boys</a> 
                     <a href="#" data-filter=".Girls">Girls</a>
-                    <a href="#" data-filter=".Kids">Kids</a>
+                    <a href="#" data-filter=".Kids">Pets</a>
                 </div>
                 <div class="isotope_container isotope row masonry-layout columns_margin_bottom_20" data-filters=".isotope_filters">
                     @foreach ($galleries as $gallery)
