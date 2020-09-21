@@ -51,7 +51,7 @@ class ManagementController extends Controller
         $management->save();
 
         return redirect(route('managements.create'))
-                ->with('success', 'management Added successfully');
+                ->with('success', 'Management Added successfully');
     }
 
     /**

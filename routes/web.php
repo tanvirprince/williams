@@ -26,7 +26,8 @@ Route::group(['namespace'=>'Frontend'], function () {
     Route::get('gallery', 'HomeController@gallery')->name('gallery');
     Route::get('gallery/{slug}', 'HomeController@singleGallery')->name('single-gallery');
     Route::get('contact', 'HomeController@contact')->name('contact');
-    Route::get('ourstory', 'HomeController@ourstory')->name('ourstory');
+    Route::get('our-story', 'HomeController@ourstory')->name('ourstory');
+    Route::get('sustainability', 'HomeController@sustainability')->name('sustainability');
     Route::post('mail', 'SendMailController@mail')->name('mail');
 
 });
@@ -50,9 +51,12 @@ Route::group(['middleware'=>'auth', 'namespace' => 'Backend', 'prefix' => 'admin
     
     Route::get('managements', 'ManagementController@create')->name('managements.create');
     Route::post('managements', 'ManagementController@store')->name('managements.store');
-    Route::put('managements', 'ManagementController@update')->name('managements.update');
+    Route::put('managements/{id}', 'ManagementController@update')->name('managements.update');
 
     Route::resource('management2', 'Management2Controller');
     Route::resource('management3', 'Management3Controller');
+
+    Route::resource('sustainabilities', 'SustainabilityController');
+    Route::get('sustainabilities/delete/{id}', 'SustainabilityController@delete')->name('sustainabilities.delete');
 });
 

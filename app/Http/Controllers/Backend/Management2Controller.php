@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Management2Request;
+use App\Http\Requests\ManagementRequest;
 use App\Management;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -37,7 +38,7 @@ class Management2Controller extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Management2Request $request)
+    public function store(ManagementRequest $request)
     {
         $file = '';
         if ($request->hasFile('image')){
@@ -83,7 +84,7 @@ class Management2Controller extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Management2Request $request)
+    public function update(ManagementRequest $request)
     {
         $file = '';
         $management = Management::find(2);

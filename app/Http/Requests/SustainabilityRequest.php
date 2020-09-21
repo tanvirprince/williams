@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class Management3Request extends FormRequest
+class SustainabilityRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -23,18 +23,9 @@ class Management3Request extends FormRequest
      */
     public function rules()
     {
-        if ($this->management) {
-            return [
-                'name' => 'required',
-                'designation' => 'required',
-                'editor1' => 'required'
-            ];
-        }
         return [
-            'name' => 'required',
-            'designation' => 'required',
-            'image' => 'required',
-            'editor1' => 'required'
+            'title' => 'required',
+            'editor1' => 'required',
         ];
     }
 }
