@@ -10,7 +10,7 @@ use App\Management;
 use App\Certificate;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
+use App\Sustainability;
 
 class HomeController extends Controller
 {
@@ -71,6 +71,12 @@ class HomeController extends Controller
     public function contact()
     {
         return view('frontend.contact');
+    }
+
+    public function sustainability()
+    {
+        $sustainabilities = Sustainability::latest()->get();
+        return view('frontend.sustainability', compact('sustainabilities'));
     }
 
 

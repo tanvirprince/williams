@@ -23,18 +23,10 @@ class ManagementRequest extends FormRequest
      */
     public function rules()
     {
-        // if ($this->management) {
-            return [
-                'name' => 'required',
-                'designation' => 'required',
-                'editor1' => 'required'
-            ];
-        // }
-        // return [
-        //     'name' => 'required',
-        //     'designation' => 'required',
-        //     'image' => 'required',
-        //     'editor1' => 'required'
-        // ];
+        return [
+            'name' => 'required',
+            'designation' => 'required',
+            'editor1' => 'required'
+        ];
     }
 }

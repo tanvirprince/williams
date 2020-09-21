@@ -18,7 +18,7 @@
                                 </ul>
                             </li>
                             <li class="{{ request()->is('gallery') ? 'active' : ''}}"><a href="{{ route('gallery') }}"> Gallary</a></li>
-                            <li class=""><a href="{{ route('gallery') }}"> Sustainbility </a></li>
+                            <li class=""><a href="{{ route('sustainability') }}"> Sustainability </a></li>
                             <li class="{{ request()->is('contact') ? 'active' : ''}}"><a href="{{ route('contact') }}">Contact</a></li>
                         </ul>
                     </nav>
