@@ -50,7 +50,7 @@ Route::group(['middleware'=>'auth', 'namespace' => 'Backend', 'prefix' => 'admin
     
     Route::get('managements', 'ManagementController@create')->name('managements.create');
     Route::post('managements', 'ManagementController@store')->name('managements.store');
-    Route::put('managements', 'ManagementController@update')->name('managements.update');
+    Route::put('managements/{id}', 'ManagementController@update')->name('managements.update');
 
     Route::resource('management2', 'Management2Controller');
     Route::resource('management3', 'Management3Controller');

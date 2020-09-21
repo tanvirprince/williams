@@ -18,7 +18,7 @@ class CreateManagementTable extends Migration
             $table->string('name');
             $table->string('designation');
             $table->longText('editor1');
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }

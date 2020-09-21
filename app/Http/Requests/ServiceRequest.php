@@ -24,8 +24,8 @@ class ServiceRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|unique:services|max:255',
-            'image' =>  'required|mimes:png,jpg,jpeg,bmp',
+            'name' => 'required',
+            'image' =>  'required',
         ];
     }
 }
