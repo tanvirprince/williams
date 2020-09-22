@@ -44,13 +44,11 @@ class AboutController extends Controller
      */
     public function store(Request $request)
     {
-
         $file = '';
         if ($request->hasFile('image')){
             $file = Storage::disk('public')->put('about', $request->file('image'));
         }
         $about = new About();
-
         if ($request->hasFile('image')){
             $about->title = $request->title;
             $about->body = $request->body;
@@ -58,13 +56,10 @@ class AboutController extends Controller
             $about->save();
 
         }else{
-
             $about->title = $request->title;
             $about->body = $request->body;
-
             $about->save();
         }
-
         return redirect()->back()
             ->with('success', 'about has been Added successfully');
     }
