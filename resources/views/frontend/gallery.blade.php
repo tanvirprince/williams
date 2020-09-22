@@ -4,24 +4,22 @@
 @endsection
 
 @section('content')
-<section class="page_breadcrumbs cs main_color2 gradient lighten_gradient section_padding_top_40 section_padding_bottom_40 table_section table_section_md">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 text-center text-md-left">
-                <h1 class="small">Product Gallary</h1>
+    <section class="page_breadcrumbs ls ms section_padding_top_40 section_padding_bottom_25 bg_image">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h1 class="small">Product Gallary</h1>
+                </div>
             </div>
-            <div class="col-md-6 text-center text-md-right">
-                <ol class="breadcrumb greylinks">
-                    <li> <a href="index.html">
-                Home
-            </a> </li>
-                    <li> <a href="#">Product</a> </li>
-                    <li class="active"> <span>Gallary</span></li>
-                </ol>
-            </div>
+            <ol class="breadcrumb bottom_breadcrumbs darklinks">
+                <li> <a href="">
+                        Home
+                    </a> </li>
+                <li> <a href="#">Gallary</a> </li>
+                <li class="active"><span>Product</span></li>
+            </ol>
         </div>
-    </div>
-</section>
+    </section>
 
 <section class="ls section_padding_top_140 section_padding_bottom_150">
     <div class="container">

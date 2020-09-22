@@ -69,6 +69,9 @@
                 @endif
 
 {{--                last two row data of management --}}
+
+
+                    @if($management_two)
                     <article class="team-item side-item side-sm content-padding big-padding text-center text-sm-left with_shadow with_social">
                         <div class="row">
 
@@ -88,7 +91,12 @@
                             </div>
                         </div>
                     </article>
+                    @else
+                        <p> please add another Management data from admin panel </p>
+                    @endif
 
+
+                    @if($management_three)
                     <article class="team-item side-item side-sm content-padding big-padding text-center text-sm-left with_shadow with_social">
                         <div class="row">
                             <div class="col-sm-4">
@@ -106,6 +114,9 @@
                             </div>
                         </div>
                     </article>
+                        @else
+                <p> Please add others Managment from admin panel</p>
+                        @endif
 
             </div>
         </div>

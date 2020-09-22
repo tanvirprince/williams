@@ -90,9 +90,7 @@
             <div class="col-xs-12"> <img src="{{ asset('/storage/'.$about->image) }}" class="alignright" alt="">
                 <h3 class="section_header topmargin_0">Williams Sweaters Ltd.</h3>
                 <p class="small-text grey">{{ $about->title }}</p>
-                <p>{!! $about->body !!}   </p>
-
-
+                <p>{!! implode(' ', array_slice(explode(' ', $about->body), 0, 70)) !!}  </p>
             </div>
         </div>
         @else

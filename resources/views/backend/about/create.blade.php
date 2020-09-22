@@ -19,17 +19,17 @@
             @csrf
             <div class="form-group">
                 <label for="exampleFormControlInput1">Title</label>
-                <input type="text" class="form-control" value="{{ $about->title  }}" name="title" id="name" placeholder="Ttile">
+                <input type="text" class="form-control"  name="title" id="name" placeholder="Ttile">
             </div>
             <div class="form-group">
                 <label for="editor1">Description</label>
-                <textarea name="body">{{ $about->body }}</textarea>
+                <textarea name="body"> </textarea>
                 <span class="text-danger">{{ $errors->has('body') ? $errors->first('body') : '' }}</span>
             </div>
             <div class="form-group">
                 <label for="exampleFormControlFile1">Add about Image</label>
                 <input type="file" name="image" class="form-control-file" id="image">
-                <img src="{{ asset('/storage/'.$about->image) }}" height="250px" width="250px">
+
             </div>
 
             <button type="submit" class="btn btn-primary"> create</button>
@@ -43,10 +43,10 @@
             @method('PUT')
             <div class="form-group">
                 <label for="exampleFormControlInput1">Title</label>
-                <input type="text" class="form-control" value="{{ $about->title  }}" name="title" id="name" placeholder="Ttile">
+                <input type="text" class="form-control" value="{{ $about->title }}" name="title" id="name" placeholder="title">
             </div>
             <div class="form-group">
-                <label for="editor1">Description</label>
+                <label for="body">Description</label>
                 <textarea name="body">{{ $about->body }}</textarea>
                 <span class="text-danger">{{ $errors->has('body') ? $errors->first('body') : '' }}</span>
             </div>
@@ -56,7 +56,7 @@
                 <img src="{{ asset('/storage/'.$about->image) }}" height="250px" width="250px">
             </div>
 
-            <button type="submit" class="btn btn-primary">Update About Company </button>
+            <button type="submit" class="btn btn-primary"> Update Story </button>
 
         </form>
 

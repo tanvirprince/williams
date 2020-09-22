@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-sm-12 display-flex v-center">
                 <div class="header_left_logo"> <a href="{{ route('homepage') }}" class="logo">
-                        <img src="{{ asset('/') }}frontend/images/logo6.png" alt="">
+                        <img src="{{ asset('/') }}frontend/images/logo10.png" alt="Williams Sweaters Ltd">
                     </a> </div>
                 <div class="header_mainmenu text-center">
                     <!-- main nav start -->

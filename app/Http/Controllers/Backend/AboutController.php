@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Backend;
 use App\About;
 use App\Brand;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\AboutRequest;
 use App\Management;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -44,7 +45,6 @@ class AboutController extends Controller
     public function store(Request $request)
     {
 
-
         $file = '';
         if ($request->hasFile('image')){
             $file = Storage::disk('public')->put('about', $request->file('image'));
@@ -64,10 +64,6 @@ class AboutController extends Controller
 
             $about->save();
         }
-
-
-
-
 
         return redirect()->back()
             ->with('success', 'about has been Added successfully');
@@ -102,10 +98,10 @@ class AboutController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(AboutRequest $request)
     {
         $file = '';
-        $about = About::latest()->first();
+        $about = About::find(1);
         if ($request->hasFile('image')) {
             if ($request->hasFile('image')) {
                 Storage::disk('public')->delete('about', $about->image);
@@ -118,7 +114,7 @@ class AboutController extends Controller
             $about->save();
         } else {
             $about->title = $request->title;
-            $about->body = $request->name;
+            $about->body = $request->body;
             $about->save();
         }
         return redirect(route('about.create'))
