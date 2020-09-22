@@ -3,6 +3,11 @@
     Williams | Home
 @endsection
 
+
+@section('extra-css')
+
+@endsection
+
 @section('content')
     <section class="intro_section page_mainslider cs all-scr-cover">
         <div class="flexslider" data-dots="false" data-nav="true">
@@ -85,7 +90,6 @@
     <section class="ls section_padding_bottom_150">
 
         @if($about)
-
         <div class="container-fluid row">
             <div class="col-xs-12"> <img src="{{ asset('/storage/'.$about->image) }}" class="alignright" alt="">
                 <h3 class="section_header topmargin_0">Williams Sweaters Ltd.</h3>
@@ -98,42 +102,42 @@
                 <div class="col-xs-12"> <img src="{{ asset('/') }}frontend/images/company.png" class="alignright" alt="">
                     <h3 class="section_header topmargin_0">Williams Sweaters Ltd.</h3>
                     <p class="small-text grey">Welcome to Williams</p>
-                    <p> insert description from admin panel   </p>
-
-
+                    <p> insert description from admin panel </p>
                 </div>
             </div>
          @endif
 
     </section>
 
-    <h3 class="text-center section_header topmargin_0">Service Process</h3>
-    <section class="ls section_padding_top_150 section_padding_bottom_150">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="isotope_container isotope row masonry-layout columns_margin_bottom_20">
-                        @foreach ($services as $service)
-                        <div class="isotope-item col-xs-12 col-sm-4">
-                            <article class="vertical-item service-item content-padding big-padding with_shadow text-center">
-                                <div class="item-media-wrap">
-                                    <div class="item-media"> <img src="{{ asset('/storage/'.$service->image) }}" alt="" height="50"> <a href="" class="abs-link"></a> </div>
-                                </div>
-                                <div class="item-content">
-                                    <h6 class="entry-title"> <a href="">{{ $service->name }}</a> </h6>
-                                </div>
-                            </article>
-                        </div>
+{{--    Service process--}}
 
-                        @endforeach
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+{{--    <h3 class="text-center section_header topmargin_0">Service Process</h3>--}}
+{{--    <section class="ls section_padding_top_150 section_padding_bottom_150">--}}
+{{--        <div class="container">--}}
+{{--            <div class="row">--}}
+{{--                <div class="col-xs-12">--}}
+{{--                    <div class="isotope_container isotope row masonry-layout columns_margin_bottom_20">--}}
+{{--                        @foreach ($services as $service)--}}
+{{--                        <div class="isotope-item col-xs-12 col-sm-4">--}}
+{{--                            <article class="vertical-item service-item content-padding big-padding with_shadow text-center">--}}
+{{--                                <div class="item-media-wrap">--}}
+{{--                                    <div class="item-media"> <img src="{{ asset('/storage/'.$service->image) }}" alt="" height="50"> <a href="" class="abs-link"></a> </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="item-content">--}}
+{{--                                    <h6 class="entry-title"> <a href="">{{ $service->name }}</a> </h6>--}}
+{{--                                </div>--}}
+{{--                            </article>--}}
+{{--                        </div>--}}
+
+{{--                        @endforeach--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </section>--}}
 
     <div class="item-content text-center">
-        <h3 class="entry-title"> <a href="">Our Clients & Brands</a> </h3>
+        <h3 class="entry-title"> <a href="">Our Brands</a> </h3>
     </div>
 
     <section class="ls section_padding_top_150 section_padding_bottom_150">
@@ -158,5 +162,33 @@
 
 
 
+    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FATNNewsTV%2Fvideos%2F2746730665581137&show_text=false&width=734&appId=872948206507683&height=411" width="734" height="411" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
 
+
+
+
+
+
+@endsection
+
+@section('extra-js')
+
+    <script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+    0:{
+    items:1
+    },
+    600:{
+    items:3
+    },
+    1000:{
+    items:5
+    }
+    }
+    })
+    </script>
 @endsection

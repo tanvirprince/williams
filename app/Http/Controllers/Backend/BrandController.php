@@ -104,7 +104,7 @@ class BrandController extends Controller
         Storage::disk('public')->delete('service', $brand->image);
         $brand->delete();
 
-        return redirect(route('service.index'))
+        return redirect(route('brand.index'))
             ->with('success', 'service Deleted successfully');
     }
 }

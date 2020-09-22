@@ -41,6 +41,8 @@
 <script src="{{asset('/')}}frontend/js/selectize.min.js"></script>
 <script src="{{asset('/')}}frontend/js/main.js"></script>
 <script src="{{asset('/')}}frontend/js/switcher.js"></script>
+
+@yield('extra-js')
 </body>
 
 </html>
