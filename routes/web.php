@@ -60,3 +60,9 @@ Route::group(['middleware'=>'auth', 'namespace' => 'Backend', 'prefix' => 'admin
     Route::get('sustainabilities/delete/{id}', 'SustainabilityController@delete')->name('sustainabilities.delete');
 });
 
+
+// Route::get('link', function () {
+//     \Artisan::call('storage:link');
+//     return "Link Storage successfully!";
+// });
+
