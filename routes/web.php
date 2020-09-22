@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Artisan;
 
 /*
 |--------------------------------------------------------------------------
@@ -62,7 +63,7 @@ Route::group(['middleware'=>'auth', 'namespace' => 'Backend', 'prefix' => 'admin
 
 
 // Route::get('link', function () {
-//     \Artisan::call('storage:link');
+//     Artisan::call('storage:link');
 //     return "Link Storage successfully!";
 // });
 
