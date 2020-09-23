@@ -48,8 +48,8 @@
               <td>{{ $loop->iteration }}</td>
               <td>{{ $certificate->title }}</td>
               <td>{{ $certificate->by }}</td>
-              <td><img src="{{ asset('/storage/'.$certificate->image) }}" alt="" width="100px" height="50px"></td>
-              <td><a target="__blank" href="{{ asset('/storage/'.$certificate->pdf) }}">Click Here</a></td>
+              <td><img src="{{ env('MY_APP').'/storage/app/public/'.$certificate->image }}" alt="" width="100px" height="50px"></td>
+              <td><a target="__blank" href="{{ env('MY_APP').'/storage/app/public/'.$certificate->pdf }}">Click Here</a></td>
               <td>
                 {{-- <a href="{{ route('certificates.edit', $certificate->id) }}" class="btn btn-sm btn-primary"> Edit </a> --}}
                 <a href="{{ route('certificates.delete', $certificate->id) }}" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure to delete?')"> Delete </a>

@@ -51,7 +51,7 @@
             <tr>
               <td>{{ $loop->iteration }}</td>
               <td>{{ $brand->name }}</td>
-              <td><img src="{{ asset('/storage/'.$brand->image) }}" alt="" width="100px" height="100px"></td>
+              <td><img src="{{ env('MY_APP').'/storage/app/public/'.$brand->image }}" alt="" width="100px" height="100px"></td>
               <td>
 
                 <a href="{{ route('brand.delete', $brand->id) }}" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure to delete?')"> Delete </a>

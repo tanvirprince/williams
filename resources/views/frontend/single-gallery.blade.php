@@ -26,7 +26,7 @@
         <div class="row">
             <div class="col-xs-12 col-md-8 col-lg-8">
                 <article class="vertical-item gallery-extended-item">
-                    <div class="item-media"> <img src="{{ asset('/storage/'.$gallery->image) }}" alt=""> </div>
+                    <div class="item-media"> <img src="{{ env('MY_APP').'/storage/app/public/'.$gallery->image }}" alt=""> </div>
                     <div class="item-content topmargin_30">
                         <h1 class="entry-title">{{ $gallery->title }}</h1>
                         <p> {!! $gallery->editor1 !!}</p>

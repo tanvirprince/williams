@@ -33,7 +33,7 @@
     @if($about)
         <div class="container-fluid row">
             <div class="col-xs-12">
-                <img src="{{ asset('/storage/'.$about->image) }}" class="alignright" alt="">
+                <img src="{{ env('MY_APP').'/storage/app/public/'.$about->image }}" class="alignright" alt="">
                 <h3 class="section_header topmargin_0">Our Story</h3>
                 <p class="small-text grey">{{ $about->title }}</p>
                 <p>{!! $about->body !!}   </p>

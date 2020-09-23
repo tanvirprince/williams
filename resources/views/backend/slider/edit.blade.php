@@ -18,7 +18,7 @@
         @csrf
         @method('PUT')
         <div class="form-group">
-            <img src="{{ asset('/storage/'.$slider->image) }}" alt="" width="100px" height="50px">
+            <img src="{{ env('MY_APP').'/storage/app/public/'.$slider->image }}" alt="" width="100px" height="50px">
         </div>
         <div class="form-group">
             <label for="image">Update Image <span style="font-size: 12px; color: red;">(Image size should be 1270*500)</span></label>

@@ -51,7 +51,7 @@
             <tr>
               <td>{{ $loop->iteration }}</td>
               <td>{{ $service->name }}</td>
-              <td><img src="{{ asset('/storage/'.$service->image) }}" alt="" width="100px" height="100px"></td>
+              <td><img src="{{ env('MY_APP').'/storage/app/public/'.$service->image }}" alt="" width="100px" height="100px"></td>
               <td>
                 <a href="{{ route('service.edit', $service->id) }}" class="btn btn-sm btn-primary"> Edit </a>
                 <a href="{{ route('service.delete', $service->id) }}" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure to delete?')"> Delete </a>

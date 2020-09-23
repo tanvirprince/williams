@@ -15,7 +15,7 @@
                 @if ($sliders->count() > 0)
                 @foreach ($sliders as $slider)
                 <li>
-                    <div class="slide-image-wrap"> <img src="{{ asset('/storage/'.$slider->image) }}" alt="" /> </div>
+                    <div class="slide-image-wrap"> <img src="{{ env('MY_APP').'/storage/app/public/'.$slider->image }}" alt="" /> </div>
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-12">
@@ -91,7 +91,7 @@
 
         @if($about)
         <div class="container-fluid row">
-            <div class="col-xs-12"> <img src="{{ asset('/storage/'.$about->image) }}" class="alignright" alt="">
+            <div class="col-xs-12"> <img src="{{ env('MY_APP').'/storage/app/public/'.$about->image }}" class="alignright" alt="">
                 <h3 class="section_header topmargin_0">Williams Sweaters Ltd.</h3>
                 <p class="small-text grey">{{ $about->title }}</p>
                 <p>{!! implode(' ', array_slice(explode(' ', $about->body), 0, 70)) !!}  </p>
@@ -121,7 +121,7 @@
 {{--                        <div class="isotope-item col-xs-12 col-sm-4">--}}
 {{--                            <article class="vertical-item service-item content-padding big-padding with_shadow text-center">--}}
 {{--                                <div class="item-media-wrap">--}}
-{{--                                    <div class="item-media"> <img src="{{ asset('/storage/'.$service->image) }}" alt="" height="50"> <a href="" class="abs-link"></a> </div>--}}
+{{--                                    <div class="item-media"> <img src="{{ env('MY_APP').'/storage/app/public/'.$service->image) }}" alt="" height="50"> <a href="" class="abs-link"></a> </div>--}}
 {{--                                </div>--}}
 {{--                                <div class="item-content">--}}
 {{--                                    <h6 class="entry-title"> <a href="">{{ $service->name }}</a> </h6>--}}
@@ -148,7 +148,7 @@
 
                         @foreach($brands as $brand)
                         <div class="isotope-item col-xs-4 col-sm-3"> <a href="#" class="with_shadow">
-                                <img src="{{ asset('/storage/'.$brand->image) }}" alt="">
+                                <img src="{{ env('MY_APP').'/storage/app/public/'.$brand->image }}" alt="">
                             </a> </div>
 
                         @endforeach

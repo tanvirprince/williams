@@ -55,7 +55,7 @@
           <input type="text" class="form-control" value="{{ $management->designation }}" name="designation" id="designation" placeholder="Designation">
           <span class="text-danger">{{ $errors->has('designation') ? $errors->first('designation') : '' }}</span>
         </div>
-        <img src="{{ asset('/storage/'.$management->image) }}" height="250px" width="250px">
+        <img src="{{ env('MY_APP').'/storage/app/public/'.$management->image }}" height="250px" width="250px">
         <div class="form-group">
           <label for="file">Add about Image</label>
           <input type="file" name="image" class="form-control-file" id="image">
