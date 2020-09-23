@@ -10,22 +10,20 @@
 
 @section('content')
 
-    <section class="page_breadcrumbs cs main_color2 gradient lighten_gradient section_padding_top_40 section_padding_bottom_40 table_section table_section_md">
+    <section class="page_breadcrumbs ls ms section_padding_top_40 section_padding_bottom_25 bg_image">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 text-center text-md-left">
-                    <h1 class="small">This is our Story</h1>
-                </div>
-                <div class="col-md-6 text-center text-md-right">
-                    <ol class="breadcrumb greylinks">
-                        <li> <a href="index.html">
-                                About us
-                            </a> </li>
-                        <li> <a href="#"> Story</a> </li>
-                        <li class="active"> <span>About Us</span></li>
-                    </ol>
+                <div class="col-sm-12 text-center">
+                    <h1 class="small">Our Story</h1>
                 </div>
             </div>
+            <ol class="breadcrumb bottom_breadcrumbs darklinks">
+                <li> <a href="">
+                        Board
+                    </a> </li>
+                <li> <a href="#">Management</a> </li>
+                <li class="active"><span>Speech</span></li>
+            </ol>
         </div>
     </section>
     <br>

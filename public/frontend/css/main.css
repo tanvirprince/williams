@@ -12127,7 +12127,7 @@ body.active-side-header.slide-right .page_header_side {
 		text-align: left;
 		list-style: none;
 		padding: 20px 0;
-		background-color: #ffffff;
+		background-color: #000000;
 		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
 		min-width: 10em;
     /* allow long menu items to determine submenu width */
@@ -12449,7 +12449,7 @@ body.active-side-header.slide-right .page_header_side {
   .header_white .toggle_menu span,
   .header_white .toggle_menu span:before,
   .header_white .toggle_menu span:after {
-		background-color: #363636;
+		background-color: #bbbac1;
 	}
 
 	.page_toplogo:not([class*="toggler"]) .toggle_menu {

@@ -3,7 +3,7 @@
         <div class="row flwx-wrap v-center">
             <div class="col-md-4 col-sm-12 col-md-push-4 text-center">
                 <div class="widget widget_text">
-                    <h3 class="widget-title">Fing Us</h3>
+                    <h3 class="widget-title">Find Us</h3>
 
                     <p class="divider_30">Williams Sweaters Limited is 100% export oriented sweater factory. </p>
                     <p class="bottommargin_5 grey"> <i class="fa fa-map-marker highlight rightpadding_10" aria-hidden="true"></i> Polashbari, Dhamsuna, Ashulia </p>
