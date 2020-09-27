@@ -5,7 +5,8 @@
                 <div class="widget widget_text">
                     <h3 class="widget-title">Find Us</h3>
 
-                    <p class="divider_30">Williams Sweaters Limited is 100% export oriented sweater factory. </p>
+                    <p class="divider_30">100% export oriented sweater factory. </p>
+                    <hr>
                     <p class="bottommargin_5 grey"> <i class="fa fa-map-marker highlight rightpadding_10" aria-hidden="true"></i> Polashbari, Dhamsuna, Ashulia </p>
                     <p class="bottommargin_5 grey"> <i class="fa fa-phone highlight rightpadding_10" aria-hidden="true"></i> +8801711313939 </p>
                     <p class="darklinks bottommargin_5"> <i class="fa fa-envelope highlight rightpadding_10" aria-hidden="true"></i> <a href="#0"> zobair@williamsbd.email </a> </p>
@@ -15,7 +16,7 @@
                 <div class="widget widget_text widget_media_margin">
                     <h3 class="widget-title">Certification</h3>
                     <a href="{{ route('certification') }}">
-                    <div class="img-fluid"> <img src="{{ asset('/') }}frontend/images/BKMEA.png" alt=""> </div>
+                    <div class="img-fluid"> <img src="{{ asset('/') }}frontend/images/BKMEA.png" style="height: 230px" alt=""> </div>
                     </a>
                 </div>
             </div>
@@ -36,6 +37,7 @@
         </div>
     </div>
 </footer>
+{{--ms remove from class footer--}}
 <section class="ds ms page_copyright">
     <div class="container">
         <div class="row">

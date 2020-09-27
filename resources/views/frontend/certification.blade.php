@@ -5,6 +5,8 @@
 @endsection
 
 @section('content')
+
+
     <section class="page_breadcrumbs ls ms section_padding_top_40 section_padding_bottom_25 bg_image">
         <div class="container">
             <div class="row">
@@ -22,7 +24,7 @@
         </div>
     </section>
 
-<section class="ls section_padding_bottom_150 columns_padding_30">
+<section class=" ">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 ">
@@ -33,7 +35,11 @@
                         <div class="entry-meta small-text big-spacing">
                             <div class="highlightlinks">
                                 <span class="categories-links">
-                        <a href="">Factory</a>
+                        <a href="">Factory video :</a>
+                    </span> </div>
+                            <div class="highlightlinks">
+                                <span class="categories-links">
+                        <a href="">Featured Video of williams Sweaters from ATN bangla</a>
                     </span> </div>
                         </div>
                     </header>

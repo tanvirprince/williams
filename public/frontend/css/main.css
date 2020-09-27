@@ -5490,7 +5490,7 @@ header [class*="col-"] {
 		right: 0;
 		background-size: cover;
 		background-position: center;
-		height: auto !important;
+		/*height: auto !important;*/
 	}
   }
 
@@ -11718,7 +11718,7 @@ body.active-side-header.slide-right .page_header_side {
 	right: 0;
 	background-size: cover;
 	background-position: center;
-	height: 500px;
+	height: 520px;
 }
 
 .slide-image-wrap img {
@@ -13623,8 +13623,9 @@ article.side-item + article.side-item {
 	.team-item .entry-content {
 		display: -webkit-box;
 		max-height: 11.15em;
+		/*max-height: auto;*/
 		-webkit-line-clamp: 5;
-		overflow: auto;
+		overflow: hidden;
 		text-overflow: ellipsis;
 	}
 }

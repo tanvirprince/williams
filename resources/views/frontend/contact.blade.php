@@ -5,22 +5,22 @@
 @endsection
 
 @section('content')
-<section class="page_breadcrumbs ls background_cover section_padding_50">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 text-center">
-                <h1 class="sr-only">Contacts</h1>
-                <ol class="breadcrumb darklinks">
-                    <li> <a href="">
-                Home
-            </a> </li>
-                    <li> <a href="#">Pages</a> </li>
-                    <li class="active"> <span>Contacts</span> </li>
-                </ol>
+    <section class="page_breadcrumbs ls ms section_padding_top_40 section_padding_bottom_25 bg_image">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h1 class="small">Contact Us</h1>
+                </div>
             </div>
+            <ol class="breadcrumb bottom_breadcrumbs darklinks">
+                <li> <a href="">
+                        Contact Us
+                    </a> </li>
+                <li> <a href="#">Map </a> </li>
+                <li class="active"><span> Content </span></li>
+            </ol>
         </div>
-    </div>
-</section>
+    </section>
 <section class="ls section_padding_top_150 section_padding_bottom_150 columns_padding_30 columns_margin_bottom_40">
     <div class="container">
         <div class="row">

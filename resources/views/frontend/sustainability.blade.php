@@ -18,17 +18,21 @@
 @endsection
 
 @section('content')
-<section class="page_breadcrumbs ls background_cover section_padding_50">
+
+<section class="page_breadcrumbs ls ms section_padding_top_40 section_padding_bottom_25 bg_image">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 text-center">
-                <h1 class="sr-only">Team</h1>
-                <ol class="breadcrumb">
-                    <li> 
-                     <h3> Sustainability </h3>  </li>
-                </ol>
+            <div class="col-sm-12 text-center">
+                <h1 class="small">Sustainability</h1>
             </div>
         </div>
+        <ol class="breadcrumb bottom_breadcrumbs darklinks">
+            <li> <a href="">
+                    Home
+                </a> </li>
+            <li> <a href="#">Sustainability</a> </li>
+            <li class="active"><span>Content</span></li>
+        </ol>
     </div>
 </section>
 <section class="ls section_padding_top_150 section_padding_bottom_150">
