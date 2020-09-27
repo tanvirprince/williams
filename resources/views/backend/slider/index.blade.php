@@ -43,7 +43,7 @@
             @foreach ($sliders as $slider)
             <tr>
               <td>{{ $loop->iteration }}</td>
-              <td><img src="{{ asset('/storage/'.$slider->image) }}" alt="" width="100px" height="50px"></td>
+              <td><img src="{{ env('MY_APP').'/storage/app/public/'.$slider->image }}" alt="" width="100px" height="50px"></td>
               <td>
                 <a href="{{ route('sliders.edit', $slider->id) }}" class="btn btn-sm btn-primary"> Edit </a>
                 <a href="{{ route('sliders.delete', $slider->id) }}" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure to delete?')"> Delete </a>

@@ -29,7 +29,7 @@
             <span class="text-danger">{{ $errors->has('by') ? $errors->first('by') : '' }}</span>
         </div>
         <div class="form-group">
-            <img src="{{ asset('/storage/'.$certificate->image) }}" alt="" width="100px" height="50px">
+            <img src="{{ env('MY_APP').'/storage/app/public/'.$certificate->image }}" alt="" width="100px" height="50px">
         </div>
         <div class="form-group">
             <label for="image">Update Image</label>

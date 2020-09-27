@@ -53,7 +53,7 @@
             <div class="form-group">
                 <label for="exampleFormControlFile1">Add about Image</label>
                 <input type="file" name="image" class="form-control-file" id="image">
-                <img src="{{ asset('/storage/'.$about->image) }}" height="250px" width="250px">
+                <img src="{{ env('MY_APP').'/storage/app/public/'.$about->image }}" height="250px" width="250px">
             </div>
 
             <button type="submit" class="btn btn-primary"> Update Story </button>

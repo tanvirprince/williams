@@ -37,9 +37,9 @@
                     @foreach ($galleries as $gallery)
                     <div class="isotope-item col-lg-4 col-md-6 col-sm-12 {{ $gallery->category }}">
                         <div class="vertical-item gallery-item content-absolute text-center ds">
-                            <div class="item-media"> <img src="{{ asset('/storage/'.$gallery->image) }}" width="370px" height="370px" alt="">
+                            <div class="item-media"> <img src="{{env('MY_APP').'/storage/app/public/'.$gallery->image }}" width="370px" height="370px" alt="">
                                 <div class="media-links">
-                                    <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="{{ asset('/storage/'.$gallery->image) }}"></a> </div>
+                                    <div class="links-wrap"> <a class="p-view prettyPhoto " title="" data-gal="prettyPhoto[gal]" href="{{env('MY_APP').'/storage/app/public/'.$gallery->image }}"></a> </div>
                                 </div>
                             </div>
                             <div class="item-content">

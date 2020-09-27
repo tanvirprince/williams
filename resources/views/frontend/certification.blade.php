@@ -73,8 +73,8 @@
         @foreach ($certificates as $certificate)
         <div class="col-md-6">
             <div class="row">
-                <h3 class="entry-title big"> <a target="__blank" href="{{ asset('/storage/'.$certificate->pdf) }}">@if (isset($certificate->title)) {{ $certificate->title }} @else Certificate @endif</a> </h3>
-                    <div class="item-media"> <a target="__blank" href="{{ asset('/storage/'.$certificate->pdf) }}"><img src="{{ asset('/storage/'.$certificate->image) }}" alt=""></a></div>
+                <h3 class="entry-title big"> <a target="__blank" href="{{ env('MY_APP').'/storage/app/public/'.$certificate->pdf }}">@if (isset($certificate->title)) {{ $certificate->title }} @else Certificate @endif</a> </h3>
+                    <div class="item-media"> <a target="__blank" href="{{ env('MY_APP').'/storage/app/public/'.$certificate->pdf }}"><img src="{{ env('MY_APP').'/storage/app/public/'.$certificate->image }}" alt=""></a></div>
                 <div class="col-xs-12 col-sm-8">
                     <div class="item-content">
                         @if (isset($certificate->by))

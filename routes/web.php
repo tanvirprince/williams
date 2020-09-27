@@ -67,3 +67,15 @@ Route::group(['middleware'=>'auth', 'namespace' => 'Backend', 'prefix' => 'admin
 //     return "Link Storage successfully!";
 // });
 
+Route::get('link', function () {
+    Artisan::call('storage:link');
+});
+Route::get('cache', function () {
+    Artisan::call('cache:clear');
+});
+Route::get('config', function () {
+    Artisan::call('config:clear');
+});
+Route::get('route', function () {
+    Artisan::call('route:clear');
+});

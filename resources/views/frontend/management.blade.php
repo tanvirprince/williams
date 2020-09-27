@@ -34,8 +34,13 @@
                 @if ($management)
                 <article class="team-item side-item side-sm content-padding big-padding text-center text-sm-left with_shadow ">
                     <div class="row">
+<<<<<<< HEAD
                         <div class="col-sm-4 col-md-4">
                             <div class="item-media"> <img src="{{ asset('/storage/'.$management->image) }}" alt=""> </div>
+=======
+                        <div class="col-sm-4">
+                            <div class="item-media "> <img src="{{ env('MY_APP').'/storage/app/public/'.$management->image }}" alt=""> </div>
+>>>>>>> 240197be53ce03908f126439e60d2533b156845f
                         </div>
                         <div class="col-sm-8 col-md-8">
                             <div class="item-content">
@@ -78,8 +83,13 @@
 
                         <div class="row">
 
+<<<<<<< HEAD
                             <div class="col-sm-4 col-sm-push-8 col-md-push-8">
                                 <div class="item-media "> <img src="{{ asset('/storage/'.$management_two->image) }}" alt=""> </div>
+=======
+                            <div class="col-sm-4 col-sm-push-8 col-md-push-7">
+                                <div class="item-media "> <img src="{{ env('MY_APP').'/storage/app/public/'.$management_two->image }}" alt=""> </div>
+>>>>>>> 240197be53ce03908f126439e60d2533b156845f
                             </div>
 
                             <div class="col-sm-10 col-sm-pull-6 col-md-pull-4 ml-1">
@@ -104,7 +114,7 @@
                     <article class="team-item side-item side-sm content-padding big-padding text-center text-sm-left with_shadow with_social">
                         <div class="row">
                             <div class="col-sm-4">
-                                <div class="item-media "> <img src="{{ asset('/storage/'.$management_three->image) }}" alt=""> </div>
+                                <div class="item-media "> <img src="{{ env('MY_APP').'/storage/app/public/'.$management_three->image }}" alt=""> </div>
                             </div>
                             <div class="col-sm-10">
                                 <div class="item-content">
