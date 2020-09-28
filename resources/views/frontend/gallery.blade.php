@@ -22,11 +22,11 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <div class="filters isotope_filters"> 
+                <div class="filters isotope_filters">
                     <a href="#" class="selected" data-filter="*">All</a>
-                    <a href="#" data-filter=".Mens">Mens</a> 
-                    <a href="#" data-filter=".Ladies">Ladies</a> 
-{{--                    <a href="#" data-filter=".Boys">Boys</a> --}}
+                    <a href="#" data-filter=".Mens">Mens</a>
+                    <a href="#" data-filter=".Ladies">Womens</a>
+                   <a href="#" data-filter=".Boys">Kids</a>
 {{--                    <a href="#" data-filter=".Girls">Girls</a>--}}
                     <a href="#" data-filter=".Kids">Pets</a>
                 </div>
@@ -49,9 +49,9 @@
                 <div class="topmargin_40 text-center">
                     {{ $galleries->links() }}
                 </div>
-                
+
             </div>
-            
+
         </div>
     </div>
 </section>
