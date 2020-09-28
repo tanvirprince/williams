@@ -32,8 +32,8 @@
             <select name="category" id="category" class="form-control"  value="{{ old('category') }}">
                 <option value="Mens" {{ ($gallery->category == "Mens") ? "selected" : ""}}>Mens</option>
                 <option value="Ladies" {{ ($gallery->category == "Ladies") ? "selected" : ""}}>Ladies</option>
-                <option value="Boys" {{ ($gallery->category == "Boys") ? "selected" : ""}}>Boys</option>
-                <option value="Girls" {{ ($gallery->category == "Girls") ? "selected" : ""}}>Girls</option>
+{{--                <option value="Boys" {{ ($gallery->category == "Boys") ? "selected" : ""}}>Boys</option>--}}
+{{--                <option value="Girls" {{ ($gallery->category == "Girls") ? "selected" : ""}}>Girls</option>--}}
                 <option value="Kids" {{ ($gallery->category == "Kids") ? "selected" : ""}}>Kids</option>
             </select>
             <span class="text-danger">{{ $errors->has('category') ? $errors->first('category') : '' }}</span>

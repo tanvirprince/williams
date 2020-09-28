@@ -5,22 +5,19 @@
 @endsection
 
 @section('content')
-<section class="page_breadcrumbs ls background_cover section_padding_50">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 text-center">
-                <h1 class="sr-only">Contacts</h1>
-                <ol class="breadcrumb darklinks">
-                    <li> <a href="">
-                Home
-            </a> </li>
-                    <li> <a href="#">Pages</a> </li>
-                    <li class="active"> <span>Contacts</span> </li>
-                </ol>
+    <section class="page_breadcrumbs ls background_cover section_padding_50">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h1 class="sr-only">Contact Us</h1>
+                    <ol class="breadcrumb">
+                        <li>
+                            <h3> Contact us </h3>  </li>
+                    </ol>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 <section class="ls section_padding_top_150 section_padding_bottom_150 columns_padding_30 columns_margin_bottom_40">
     <div class="container">
         <div class="row">
@@ -46,6 +43,11 @@
                             @endforeach
                         </ul>
                     </div>
+                @endif
+                @if (session('success'))
+                <div class="alert alert-success" role="alert">
+                    {{ session('success') }}
+                </div>
                 @endif
 
                 @if($message = Session::get('seccess'))

@@ -31,8 +31,8 @@
             <select name="category" id="category" class="form-control"  value="{{ old('category') }}">
                 <option value="Mens">Mens</option>
                 <option value="Ladies">Ladies</option>
-                <option value="Boys">Boys</option>
-                <option value="Girls">Girls</option>
+{{--                <option value="Boys">Boys</option>--}}
+{{--                <option value="Girls">Girls</option>--}}
                 <option value="Kids">Kids</option>
             </select>
             <span class="text-danger">{{ $errors->has('category') ? $errors->first('category') : '' }}</span>

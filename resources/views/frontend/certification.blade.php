@@ -5,24 +5,21 @@
 @endsection
 
 @section('content')
-    <section class="page_breadcrumbs ls ms section_padding_top_40 section_padding_bottom_25 bg_image">
+    <section class="page_breadcrumbs ls background_cover section_padding_50">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 text-center">
-                    <h1 class="small">Certification </h1>
+                <div class="col-xs-12 text-center">
+                    <h1 class="sr-only">Team</h1>
+                    <ol class="breadcrumb">
+                        <li>
+                            <h3> Certification </h3>  </li>
+                    </ol>
                 </div>
             </div>
-            <ol class="breadcrumb bottom_breadcrumbs darklinks">
-                <li> <a href="">
-                        Company
-                    </a> </li>
-                <li> <a href="#">Certification</a> </li>
-                <li class="active"><span>Video</span></li>
-            </ol>
         </div>
     </section>
 
-<section class="ls section_padding_bottom_150 columns_padding_30">
+<section class="ls columns_padding_30">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 ">
@@ -33,9 +30,15 @@
                         <div class="entry-meta small-text big-spacing">
                             <div class="highlightlinks">
                                 <span class="categories-links">
-                        <a href="">Factory</a>
-                    </span> </div>
-                        </div>
+                                    <a href="">Factory</a>
+                                </span>
+                            </div>
+                            <div class="highlightlinks">
+                                <span class="categories-links">
+                                    <a href="">Bangladeshi Media channel broadcasting our Sweater Factory in ATN Bangla</a>
+                                </span>
+                            </div>
+                            </div>
                     </header>
                     <div class="item-media-wrap">
                         <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FATNNewsTV%2Fvideos%2F2746730665581137&show_text=false&width=734&appId=872948206507683&height=411" width="734" height="411" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>

@@ -87,14 +87,14 @@
 
     <br/>
 
-    <section class="ls section_padding_bottom_150">
+    <section>
 
         @if($about)
         <div class="container-fluid row">
             <div class="col-xs-12"> <img src="{{ env('MY_APP').'/storage/app/public/'.$about->image }}" class="alignright" alt="">
                 <h3 class="section_header topmargin_0">Williams Sweaters Ltd.</h3>
                 <p class="small-text grey">{{ $about->title }}</p>
-                <p>{!! implode(' ', array_slice(explode(' ', $about->body), 0, 70)) !!}  </p>
+                <p>{!! implode(' ', array_slice(explode(' ', $about->body), 0, 78)) !!} ... <a href="{{ route('ourstory') }}"><strong>Read More</strong>  </a>  </p>
             </div>
         </div>
         @else
@@ -137,7 +137,7 @@
 {{--    </section>--}}
 
     <div class="item-content text-center">
-        <h3 class="entry-title"> <a href="">Our Brands</a> </h3>
+        <h3 class="entry-title"> <a href="">Our Clients</a> </h3>
     </div>
 
     <section class="ls section_padding_top_150 section_padding_bottom_150">
@@ -147,7 +147,7 @@
                     <div class="isotope_container isotope row masonry-layout images-grid columns_margin_bottom_20">
 
                         @foreach($brands as $brand)
-                        <div class="isotope-item col-xs-4 col-sm-3"> <a href="#" class="with_shadow">
+                        <div class="isotope-item col-xs-4 col-sm-3"> <a  class="with_shadow">
                                 <img src="{{ env('MY_APP').'/storage/app/public/'.$brand->image }}" alt="">
                             </a> </div>
 
@@ -163,22 +163,5 @@
 
 @section('extra-js')
 
-    <script>
-    $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-    0:{
-    items:1
-    },
-    600:{
-    items:3
-    },
-    1000:{
-    items:5
-    }
-    }
-    })
-    </script>
+
 @endsection

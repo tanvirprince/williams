@@ -20,10 +20,11 @@ class SendMailController extends Controller
         $data = array(
             'name' => $request->name,
             'message' => $request->message,
+            'email' => $request->email,
 
         );
 
-        Mail::to('admin@williamsbd.email')->send(new SendMail($data));
+        Mail::to('williams.sweaters.ltd@gmail.com')->send(new SendMail($data));
         return back()->with('success', 'thanks for contacting us');
 
     }

@@ -58,7 +58,7 @@ class HomeController extends Controller
 
     public function gallery()
     {
-        $galleries = Gallery::latest()->paginate(6);
+        $galleries = Gallery::latest()->paginate(18);
         return view('frontend.gallery', compact('galleries'));
     }
 
