@@ -15,37 +15,6 @@
                 @if ($sliders->count() > 0)
                 @foreach ($sliders as $slider)
                 <li>
-<<<<<<< HEAD
-                    <div class="slide-image-wrap"> <img src="{{ asset('/storage/'.$slider->image) }}" alt="" /> </div>
-{{--                    <div class="container">--}}
-{{--                        <div class="row">--}}
-{{--                            <div class="col-xs-12">--}}
-{{--                                <div class="slide_description_wrapper">--}}
-{{--                                    <div class="slide_description">--}}
-{{--                                         <div class="intro-layer to_animate" data-animation="fadeInUp">--}}
-{{--                                            <p> <span class="light_bg_color small-text">Women's Sweaters</span> </p>--}}
-{{--                                        </div>--}}
-{{--                                        <div class="intro-layer to_animate" data-animation="fadeInUp">--}}
-{{--                                            <p> <span class="hero-text"> 2020<i></i></span> </p>--}}
-{{--                                            <!--text hero bad dilam -->--}}
-{{--                                        </div>--}}
-{{--                                        <div class="intro-layer to_animate" data-animation="fadeInUp">--}}
-{{--                                            <p> <span class="small-text big-spacing">Summer Collection</span> </p>--}}
-{{--                                        </div>--}}
-{{--                                        <div class="intro-layer to_animate" data-animation="fadeInUp">--}}
-{{--                                            <div class="slide_buttons"> <a href="shop.html" class="theme_button min_width_button">go to shop</a> </div>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-
-{{--                                </div>--}}
-
-{{--                            </div>--}}
-
-{{--                        </div>--}}
-
-{{--                    </div>--}}
-
-=======
                     <div class="slide-image-wrap"> <img src="{{ env('MY_APP').'/storage/app/public/'.$slider->image }}" alt="" /> </div>
                     <div class="container">
                         <div class="row">
@@ -75,7 +44,6 @@
                         <!-- eof .row -->
                     </div>
                     <!-- eof .container -->
->>>>>>> 240197be53ce03908f126439e60d2533b156845f
                 </li>
                 @endforeach
                 @else
