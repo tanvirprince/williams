@@ -4,20 +4,17 @@
 @endsection
 
 @section('content')
-    <section class="page_breadcrumbs ls ms section_padding_top_40 section_padding_bottom_25 bg_image">
+    <section class="page_breadcrumbs ls background_cover section_padding_50">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 text-center">
-                    <h1 class="small">Product Gallary</h1>
+                <div class="col-xs-12 text-center">
+                    <h1 class="sr-only">Gallary</h1>
+                    <ol class="breadcrumb">
+                        <li>
+                            <h3> Gallary Product </h3>  </li>
+                    </ol>
                 </div>
             </div>
-            <ol class="breadcrumb bottom_breadcrumbs darklinks">
-                <li> <a href="">
-                        Home
-                    </a> </li>
-                <li> <a href="#">Gallary</a> </li>
-                <li class="active"><span>Product</span></li>
-            </ol>
         </div>
     </section>
 
@@ -25,12 +22,12 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <div class="filters isotope_filters"> 
+                <div class="filters isotope_filters">
                     <a href="#" class="selected" data-filter="*">All</a>
-                    <a href="#" data-filter=".Mens">Mens</a> 
-                    <a href="#" data-filter=".Ladies">Ladies</a> 
-                    <a href="#" data-filter=".Boys">Boys</a> 
-                    <a href="#" data-filter=".Girls">Girls</a>
+                    <a href="#" data-filter=".Mens">Mens</a>
+                    <a href="#" data-filter=".Ladies">Womens</a>
+                   <a href="#" data-filter=".Boys">Kids</a>
+{{--                    <a href="#" data-filter=".Girls">Girls</a>--}}
                     <a href="#" data-filter=".Kids">Pets</a>
                 </div>
                 <div class="isotope_container isotope row masonry-layout columns_margin_bottom_20" data-filters=".isotope_filters">
@@ -52,9 +49,9 @@
                 <div class="topmargin_40 text-center">
                     {{ $galleries->links() }}
                 </div>
-                
+
             </div>
-            
+
         </div>
     </div>
 </section>

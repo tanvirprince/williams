@@ -6,7 +6,7 @@
 
 @section('extra-css')
   <!-- Custom styles for this page -->
-  <link href="{{ asset('/') }}backend/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet"> 
+  <link href="{{ asset('/') }}backend/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 @endsection
 
 @section('extra-js')
@@ -60,7 +60,7 @@
               <td>{{ $loop->iteration }}</td>
               <td>{{ $gallery->title }}</td>
               <td>{{ $gallery->category }}</td>
-              <td><img src="{{ env('MY_APP').'/storage/app/public/'.$gallery->image }}" alt="" width="100px" height="50px"></td>
+              <td><img src="{{ env('MY_APP').'/storage/app/public/'.$gallery->image }}" alt="" width="100px" height="80px"></td>
               <td>{{ Carbon\Carbon::parse($gallery->date)->format('d F, Y') }}</td>
               <td>{!! implode(' ', array_slice(explode(' ', $gallery->editor1), 0, 10)) !!}</td>
               <td>
@@ -74,5 +74,5 @@
       </div>
     </div>
   </div>
-  </div> 
+  </div>
 @endsection

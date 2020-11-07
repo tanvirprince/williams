@@ -8,7 +8,7 @@
 <script src="https://cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
 <script>
     CKEDITOR.replace( 'editor1' );
-</script>   
+</script>
 @endsection
 
 
@@ -32,9 +32,9 @@
             <select name="category" id="category" class="form-control"  value="{{ old('category') }}">
                 <option value="Mens" {{ ($gallery->category == "Mens") ? "selected" : ""}}>Mens</option>
                 <option value="Ladies" {{ ($gallery->category == "Ladies") ? "selected" : ""}}>Ladies</option>
-                <option value="Boys" {{ ($gallery->category == "Boys") ? "selected" : ""}}>Boys</option>
-                <option value="Girls" {{ ($gallery->category == "Girls") ? "selected" : ""}}>Girls</option>
-                <option value="Kids" {{ ($gallery->category == "Kids") ? "selected" : ""}}>Kids</option>
+               <option value="Boys" {{ ($gallery->category == "Boys") ? "selected" : ""}}>Kids</option>
+{{--                <option value="Girls" {{ ($gallery->category == "Girls") ? "selected" : ""}}>Girls</option>--}}
+                <option value="Kids" {{ ($gallery->category == "Kids") ? "selected" : ""}}>Pets</option>
             </select>
             <span class="text-danger">{{ $errors->has('category') ? $errors->first('category') : '' }}</span>
         </div>
@@ -51,5 +51,5 @@
 
         <button type="submit" class="btn btn-primary">Update</button>
     </form>
-  </div> 
+  </div>
 @endsection

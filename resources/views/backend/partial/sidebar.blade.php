@@ -133,13 +133,13 @@
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBrand" aria-expanded="true" aria-controls="collapseUtilities">
             <i class="fas fa-fw fa-wrench"></i>
-            <span>Brand and Clients </span>
+            <span> Clients </span>
         </a>
         <div id="collapseBrand" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Brand or Clients </h6>
-                <a class="collapse-item" href="{{ route('brand.index')}}">Manage Brand</a>
-                <a class="collapse-item" href="{{ route('brand.create') }}">Add Brand</a>
+                <h6 class="collapse-header">My Clients </h6>
+                <a class="collapse-item" href="{{ route('brand.index')}}">Manage Client</a>
+                <a class="collapse-item" href="{{ route('brand.create') }}">Add Client</a>
 
             </div>
         </div>

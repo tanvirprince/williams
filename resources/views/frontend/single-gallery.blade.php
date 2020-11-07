@@ -4,22 +4,19 @@
 @endsection
 
 @section('content')
-<section class="page_breadcrumbs cs main_color2 gradient lighten_gradient section_padding_top_40 section_padding_bottom_40 table_section table_section_md">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 text-center text-md-left">
-                <h1 class="small">Gallery Details</h1>
-            </div>
-            <div class="col-md-6 text-center text-md-right">
-                <ol class="breadcrumb greylinks">
-                    <li> <a href="index.html">Home</a> </li>
-                    {{-- <li> <a href="product.html">Product</a> </li> --}}
-                    <li class="active"> <span>Gallary</span></li>
-                </ol>
+    <section class="page_breadcrumbs ls background_cover section_padding_50">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h1 class="sr-only">Gallary</h1>
+                    <ol class="breadcrumb">
+                        <li>
+                            <h3> Product Details </h3>  </li>
+                    </ol>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 <section class="ls section_padding_top_150 section_padding_bottom_150 columns_padding_30">
     <div class="container">
@@ -30,8 +27,6 @@
                     <div class="item-content topmargin_30">
                         <h1 class="entry-title">{{ $gallery->title }}</h1>
                         <p> {!! $gallery->editor1 !!}</p>
-                        <div class="share-gallery-single">
-                        <a href="#" class="social-icon color-icon border-icon rounded-icon socicon-facebook"></a> <a href="#" class="social-icon color-icon border-icon rounded-icon socicon-twitter"></a> <a href="#" class="social-icon color-icon border-icon rounded-icon socicon-google"></a>										<a href="#" class="social-icon color-icon border-icon rounded-icon socicon-linkedin"></a> <a href="#" class="social-icon color-icon border-icon rounded-icon socicon-pinterest"></a> </div>
                     </div>
                 </article>
             </div>
@@ -45,17 +40,19 @@
                     </ul>
                 </div>
                 <div class="widget widget_text">
-                    <h3 class="widget-title">Services</h3>
+                    <h3 class="widget-title">Inspection & quality</h3>
                     <ul class="list2 grey">
-                        <li>Ex eruditi offendit duo ea sea</li>
-                        <li>Semper antiopam tractatos</li>
-                        <li>Elaboraret eum id lorem</li>
-                        <li>Sensibus an vim id vel omnis</li>
+
+                        <li>FABRIC QUALITY</li>
+                        <li>TRIM QUALITY</li>
+                        <li>STITCHING QUALITY</li>
+                        <li>FINISHING & WASHING</li>
+                        <li>SAFETY MEASURE FOR KIDS</li>
                     </ul>
                 </div>
                 <div class="widget widget_tag_cloud">
-                    <h3 class="widget-title">Tags</h3>
-                    <div class="tagcloud"> <a href="#" title="">Money</a> <a href="#" title="">Law</a> <a href="#" title="">Invest</a> </div>
+                    <h3 class="widget-title">Infrastructure</h3>
+                    <div class="tagcloud"> <a  title="">Fire Safety</a> <a  title="">ETP System</a> <a title="">Factory Audit</a> </div>
                 </div>
             </aside>
         </div>

@@ -1,4 +1,4 @@
-<footer class="page_footer ds ms section_padding_top_150 section_padding_bottom_150 columns_padding_30 columns_margin_bottom_40">
+<footer class="page_footer ds ms section_padding_top_150  columns_padding_30 columns_margin_bottom_40">
     <div class="container">
         <div class="row flwx-wrap v-center">
             <div class="col-md-4 col-sm-12 col-md-push-4 text-center">
@@ -26,7 +26,7 @@
                     <div id="fb-root"></div>
                     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v8.0&appId=872948206507683&autoLogAppEvents=1" nonce="bLj7uFW6"></script>
                     <div class="fb-page"
-                         data-href="https://www.facebook.com/MicroKodes"
+                         data-href="https://www.facebook.com/Williams-Sweaters-Ltd-106571887876066/"
                          data-width="400"
                          data-hide-cover="false"
                          data-show-facepile="true">
@@ -37,8 +37,7 @@
         </div>
     </div>
 </footer>
-{{--ms remove from class footer--}}
-<section class="ds ms page_copyright">
+<section class="ds page_copyright">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center">

@@ -53,10 +53,10 @@
   - template parallax sections
   - footer styles
   - copyrights styles
-  - google map 
+  - google map
   - intro slider inside content
 * Intro Section Styles
-* Main Menu 
+* Main Menu
   - Desktop menu
   - Mobile menu
   - Mobile menu toggler
@@ -88,7 +88,7 @@
   - teasers
   - testimonials
   - thumbnail
-  - price tables 
+  - price tables
   - contact forms
   - partners_carousel
 * Social Icons
@@ -111,12 +111,12 @@ Background color for dark muted section (.ds.ms): #292929
 Border colors for elements in light section (and .with_border elements): #e5e5e5, rgba(102, 102, 102, 0.2)
 Background color for elements in light section (.with_background): #f2f2f2
 
-Dark section (.ds) colors: 
+Dark section (.ds) colors:
 Text color in dark section: #b3b3b3
 Border colors for elements in dark section: rgba(255, 255, 255, 0.2)
 Background color for elements in dark section (.with_background): rgba(0, 0, 0, 0.2)
 
-Color section (.cs) colors: 
+Color section (.cs) colors:
 Border colors for elements in color section: rgba(255, 255, 255, 0.23)
 
 */
@@ -3498,7 +3498,7 @@ html[xmlns] .slides {
 	margin: 0 0;
 	position: relative;
 	zoom: 1;
-	height: 500px;
+	height: 550px;
 }
 
 .flex-viewport {
@@ -4144,7 +4144,7 @@ div.ppt {
 }
 
 .chart .chart-meta span.title {
-	
+
 	font-size: 20px;
 	margin: 0;
 }
@@ -4173,8 +4173,8 @@ div.ppt {
 	margin-top: 0;
 }
 
-/* 
-** Time Table 
+/*
+** Time Table
 */
 #timetable span {
 	display: block;
@@ -4210,7 +4210,7 @@ div.ppt {
 	color: #363636;
 }
 
-/* 
+/*
 ** toTop
 */
 #toTop {
@@ -5474,7 +5474,7 @@ header [class*="col-"] {
 	}
 }
 
-/* On screens that are 600px wide or less, the background color is olive by Hasib */ 
+/* On screens that are 600px wide or less, the background color is olive by Hasib */
 @media screen and (max-width: 768px) {
 	.flexslider {
 		margin: 0 0;
@@ -11697,7 +11697,7 @@ body.active-side-header.slide-right .page_header_side {
 	}
 }
 
-/* 
+/*
 ** Intro Section Styles
 */
 @media (min-width: 992px) {
@@ -11718,7 +11718,11 @@ body.active-side-header.slide-right .page_header_side {
 	right: 0;
 	background-size: cover;
 	background-position: center;
+<<<<<<< HEAD
 	height: 520px;
+=======
+	height: 550px;
+>>>>>>> 13c1d4ade000236681d73b8782382f66af366b14
 }
 
 .slide-image-wrap img {
@@ -13622,8 +13626,12 @@ article.side-item + article.side-item {
 
 	.team-item .entry-content {
 		display: -webkit-box;
+<<<<<<< HEAD
 		max-height: 11.15em;
 		/*max-height: auto;*/
+=======
+		/*max-height: 11.15em;*/
+>>>>>>> 13c1d4ade000236681d73b8782382f66af366b14
 		-webkit-line-clamp: 5;
 		overflow: hidden;
 		text-overflow: ellipsis;
@@ -15893,8 +15901,8 @@ widget_pages
 	padding: 0 15px;
 }
 
-/* 
-** Testimonials 
+/*
+** Testimonials
 */
 @media (max-width: 600px) {
 	.blockquote-big {
